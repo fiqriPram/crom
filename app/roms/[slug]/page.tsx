@@ -94,6 +94,29 @@ export default async function RomPage({ params }: { params: Promise<{ slug: stri
                 <circle cx="44" cy="22" r="2.5" fill="currentColor" className={`${rom.color}/30`} />
               </>
             )}
+            {rom.slug === "voltageos" && (
+              <>
+                <path d="M24 20h16c2.21 0 4 1.79 4 4v8l-6 6H24c-2.21 0-4-1.79-4-4V24c0-2.21 1.79-4 4-4Z" fill="currentColor" className={`${rom.color}/20`} />
+                <path d="M24 28h16M24 34h10" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="1.5" strokeLinecap="round" />
+                <circle cx="44" cy="22" r="2.5" fill="currentColor" className={`${rom.color}/30`} />
+                <path d="M38 38l6-6v4c0 2.21-1.79 4-4 4h-2Z" fill="currentColor" className={`${rom.color}/20`} />
+              </>
+            )}
+            {rom.slug === "superioros" && (
+              <>
+                <path d="M22 26c0-2.21 1.79-4 4-4h12c2.21 0 4 1.79 4 4v12c0 2.21-1.79 4-4 4H26c-2.21 0-4-1.79-4-4V26Z" fill="currentColor" className={`${rom.color}/20`} />
+                <path d="M28 28l4 4-4 4M32 36h6" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <circle cx="44" cy="24" r="2.5" fill="currentColor" className={`${rom.color}/30`} />
+              </>
+            )}
+            {rom.slug === "projectblaze" && (
+              <>
+                <path d="M32 16l10 12c4 4.5 4 11 0 15.5-2 2.5-5 4-8 4s-6-1.5-8-4c-4-4.5-4-11 0-15.5l8-12Z" fill="currentColor" className={`${rom.color}/20`} />
+                <path d="M32 16l6 8c3 3.5 3 8 0 11-1.5 2-3.5 3-6 3s-4.5-1-6-3c-3-3-3-7.5 0-11l6-8Z" fill="currentColor" className={`${rom.color}/30`} />
+                <path d="M30 28l2 4 2-4" stroke="currentColor" className={`${rom.color}/60`} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <circle cx="32" cy="38" r="2.5" fill="currentColor" />
+              </>
+            )}
           </svg>
         </div>
         <h1 className={`text-4xl font-semibold tracking-tight sm:text-5xl ${rom.color}`}>

@@ -22,6 +22,9 @@
   --color-zen-pink: #f472b6;
   --color-zen-yellow: #fbbf24;
   --color-zen-lime: #a3e635;
+  --color-zen-rose: #fb7185;
+  --color-zen-indigo: #818cf8;
+  --color-zen-sky: #38bdf8;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);

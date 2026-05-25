@@ -355,6 +355,119 @@ export const roms: Rom[] = [
       </svg>
     ),
   },
+  {
+    slug: "voltageos",
+    name: "VoltageOS",
+    tagline: "Pure AOSP — simple, secure, performant",
+    description:
+      "A simplistic, no-frills pure AOSP experience with the right dab of customizations, security patches, and privacy features.",
+    longDescription:
+      "VoltageOS delivers a simplistic, no-frills pure AOSP experience that won't let you down in getting through every day uninterrupted. With just the right amount of customizations, latest security patches from Google, sandboxed Google Play inspired by GrapheneOS, and Monet theme support, it strikes the perfect balance between simplicity and functionality. Perfect for users who want a clean, secure, and performant daily driver.",
+    benefits: [
+      "Pure AOSP — no bloatware or unnecessary modifications",
+      "Latest security patches as soon as Google releases them",
+      "Sandboxed Google Play for enhanced privacy (GrapheneOS-inspired)",
+      "Google Monet theming support",
+      "Clean, performant daily driver experience",
+    ],
+    features: [
+      "Pure AOSP experience",
+      "Sandboxed Google Play",
+      "Monet theme engine",
+      "Latest security patches",
+      "Performance optimizations",
+      "Active community & maintainers",
+    ],
+    color: "text-zen-rose",
+    bgColor: "bg-zen-rose/10",
+    borderColor: "border-zen-rose/30",
+    ringColor: "ring-zen-rose/30",
+    url: "https://www.voltageos.com/",
+    thumbnail: (
+      <svg viewBox="0 0 64 64" fill="none" className="size-14">
+        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-rose/30" strokeWidth="1.5" />
+        <path d="M24 20h16c2.21 0 4 1.79 4 4v8l-6 6H24c-2.21 0-4-1.79-4-4V24c0-2.21 1.79-4 4-4Z" fill="currentColor" className="text-zen-rose/20" />
+        <path d="M24 28h16M24 34h10" stroke="currentColor" className="text-zen-rose/50" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="44" cy="22" r="2.5" fill="currentColor" className="text-zen-rose/30" />
+        <path d="M38 38l6-6v4c0 2.21-1.79 4-4 4h-2Z" fill="currentColor" className="text-zen-rose/20" />
+      </svg>
+    ),
+  },
+  {
+    slug: "projectblaze",
+    name: "Project Blaze",
+    tagline: "Enhanced Android with customizable features",
+    description:
+      "An AOSP-based custom ROM with GAPPS and VANILLA variants, focusing on optimized performance, security, and medium-to-minimal customizations.",
+    longDescription:
+      "Project Blaze is a custom Android ROM based on AOSP that delivers an enhanced Android experience with customizable features, optimized performance, and strong security. Available in both GAPPS and VANILLA variants, it supports 15+ official devices. Blaze focuses on providing medium to minimal customizations — just the right amount to make your device feel personal without overwhelming you. Built on Android 14 (with past versions on 13 and 12.1), it ships with the latest security patches for a stable and secure daily driver.",
+    benefits: [
+      "Available in both GAPPS and VANILLA variants for user flexibility",
+      "Latest security patches for enhanced protection",
+      "Medium to minimal customizations — balanced and clean",
+      "Optimized for performance and battery efficiency",
+      "Active development with official device support",
+    ],
+    features: [
+      "AOSP-based clean foundation",
+      "GAPPS & VANILLA variants",
+      "Optimized performance tuning",
+      "Latest security patches",
+      "Medium-to-minimal customizations",
+      "15+ officially supported devices",
+    ],
+    color: "text-zen-sky",
+    bgColor: "bg-zen-sky/10",
+    borderColor: "border-zen-sky/30",
+    ringColor: "ring-zen-sky/30",
+    url: "https://www.projectblaze.me/",
+    thumbnail: (
+      <svg viewBox="0 0 64 64" fill="none" className="size-14">
+        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-sky/30" strokeWidth="1.5" />
+        <path d="M32 16l10 12c4 4.5 4 11 0 15.5-2 2.5-5 4-8 4s-6-1.5-8-4c-4-4.5-4-11 0-15.5l8-12Z" fill="currentColor" className="text-zen-sky/20" />
+        <path d="M32 16l6 8c3 3.5 3 8 0 11-1.5 2-3.5 3-6 3s-4.5-1-6-3c-3-3-3-7.5 0-11l6-8Z" fill="currentColor" className="text-zen-sky/30" />
+        <path d="M30 28l2 4 2-4" stroke="currentColor" className="text-zen-sky/60" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="32" cy="38" r="2.5" fill="currentColor" />
+      </svg>
+    ),
+  },
+  {
+    slug: "superioros",
+    name: "SuperiorOS",
+    tagline: "Elevate your Android experience with AOSP",
+    description:
+      "An AOSP-based custom ROM offering lightning-fast performance, extensive customization, and rock-solid stability.",
+    longDescription:
+      "SuperiorOS is an AOSP-based custom ROM designed to elevate your Android experience. It focuses on delivering lightning-fast performance, extensive customization options, and rock-solid stability. Developed by a passionate team, SuperiorOS aims to provide users with a premium Android experience that balances speed, features, and reliability.",
+    benefits: [
+      "Lightning-fast performance optimizations",
+      "Extensive customization options",
+      "Rock-solid stability for daily use",
+      "Clean AOSP base with thoughtful enhancements",
+      "Active development and community support",
+    ],
+    features: [
+      "AOSP-based clean experience",
+      "Performance-tuned kernel",
+      "Extensive UI customization",
+      "Stable daily driver quality",
+      "Regular updates & security patches",
+      "Active community & support",
+    ],
+    color: "text-zen-indigo",
+    bgColor: "bg-zen-indigo/10",
+    borderColor: "border-zen-indigo/30",
+    ringColor: "ring-zen-indigo/30",
+    url: "https://superioros.github.io/",
+    thumbnail: (
+      <svg viewBox="0 0 64 64" fill="none" className="size-14">
+        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-indigo/30" strokeWidth="1.5" />
+        <path d="M22 26c0-2.21 1.79-4 4-4h12c2.21 0 4 1.79 4 4v12c0 2.21-1.79 4-4 4H26c-2.21 0-4-1.79-4-4V26Z" fill="currentColor" className="text-zen-indigo/20" />
+        <path d="M28 28l4 4-4 4M32 36h6" stroke="currentColor" className="text-zen-indigo/50" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="44" cy="24" r="2.5" fill="currentColor" className="text-zen-indigo/30" />
+      </svg>
+    ),
+  },
 ]
 
 export function getRom(slug: string): Rom | undefined {
