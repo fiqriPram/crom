@@ -85,6 +85,50 @@ const roms = [
       </svg>
     ),
   },
+  {
+    name: "Evolution X",
+    tagline: "Pixel UI, Customization & more",
+    description:
+      "Evolution X is a custom Android ROM that aims to replicate the Google Pixel experience, with added customization. Based on the LineageOS Project and built to bring Android 16 to your device.",
+    features: [
+      "Pixel look & feel with Google UI",
+      "Frequent updates & latest security patches",
+      "Deep customization options",
+      "Based on LineageOS stable base",
+      "Optimized for performance & battery",
+      "Active community & development",
+    ],
+    color: "text-zen-green",
+    bgColor: "bg-zen-green/10",
+    borderColor: "border-zen-green/20",
+    url: "https://evolution-x.org/",
+    thumbnail: (
+      <svg viewBox="0 0 80 80" fill="none" className="size-20">
+        <circle cx="40" cy="40" r="34" fill="currentColor" className="text-zen-green/10" />
+        <circle cx="40" cy="40" r="34" stroke="currentColor" className="text-zen-green/30" strokeWidth="2" />
+        <path
+          d="M28 28h24v16c0 6.627-5.373 12-12 12s-12-5.373-12-12V28Z"
+          fill="currentColor"
+          className="text-zen-green/20"
+        />
+        <path
+          d="M28 34h24"
+          stroke="currentColor"
+          className="text-zen-green/50"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+        />
+        <circle cx="40" cy="48" r="6" fill="currentColor" className="text-zen-green/40" />
+        <path
+          d="M34 52c0-3.314 2.686-6 6-6s6 2.686 6 6"
+          stroke="currentColor"
+          className="text-zen-green"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
 ]
 
 export default function Home() {
@@ -100,51 +144,49 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="flex flex-col items-center gap-16 px-6 pb-24">
+      <section className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 px-6 pb-24 sm:grid-cols-2 lg:grid-cols-3 lg:items-stretch">
         {roms.map((rom, i) => (
           <Card
             key={rom.name}
-            className={`w-full max-w-4xl overflow-hidden border-2 ${rom.borderColor}`}
+            className={`flex flex-col border-2 ${rom.borderColor}`}
           >
-            <div className="flex flex-col gap-6 p-6 sm:flex-row sm:items-start sm:p-8">
-              <div className={`flex shrink-0 items-center justify-center rounded-2xl ${rom.bgColor} p-4`}>
+            <CardHeader className="items-center gap-4 pt-8 text-center">
+              <div className={`flex items-center justify-center rounded-2xl ${rom.bgColor} p-4`}>
                 {rom.thumbnail}
               </div>
-              <div className="flex flex-1 flex-col gap-4">
-                <div>
-                  <h2 className={`text-3xl font-semibold tracking-tight ${rom.color}`}>
-                    {rom.name}
-                  </h2>
-                  <p className="mt-1 text-base text-muted-foreground">
-                    {rom.tagline}
-                  </p>
-                </div>
-                <p className="text-sm leading-relaxed text-muted-foreground">
-                  {rom.description}
-                </p>
-                <div className="grid grid-cols-1 gap-x-6 gap-y-1.5 sm:grid-cols-2">
-                  {rom.features.map((f) => (
-                    <div key={f} className="flex items-center gap-2 text-sm">
-                      <svg
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        className={`size-4 shrink-0 ${rom.color}`}
-                      >
-                        <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1ZM6.75 11.5l-3-3L5 7.25l1.75 1.75L11 4.5l1.25 1.25-5.5 5.75Z" />
-                      </svg>
-                      <span>{f}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-2">
-                  <a href={rom.url} target="_blank" rel="noopener noreferrer">
-                    <Button variant={i === 0 ? "default" : "outline"}>
-                      Visit {rom.name}
-                    </Button>
-                  </a>
-                </div>
+              <div>
+                <CardTitle className={`text-2xl ${rom.color}`}>
+                  {rom.name}
+                </CardTitle>
+                <CardDescription className="mt-1 text-base">
+                  {rom.tagline}
+                </CardDescription>
               </div>
-            </div>
+            </CardHeader>
+            <CardContent className="flex flex-1 flex-col gap-5 px-6 pb-8">
+              <p className="text-sm leading-relaxed text-muted-foreground text-center">
+                {rom.description}
+              </p>
+              <div className="flex-1 space-y-2">
+                {rom.features.map((f) => (
+                  <div key={f} className="flex items-center gap-2 text-sm">
+                    <svg
+                      viewBox="0 0 16 16"
+                      fill="currentColor"
+                      className={`size-4 shrink-0 ${rom.color}`}
+                    >
+                      <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1ZM6.75 11.5l-3-3L5 7.25l1.75 1.75L11 4.5l1.25 1.25-5.5 5.75Z" />
+                    </svg>
+                    <span>{f}</span>
+                  </div>
+                ))}
+              </div>
+              <a href={rom.url} target="_blank" rel="noopener noreferrer" className="mt-auto">
+                <Button variant={i === 0 ? "default" : "outline"} className="w-full">
+                  Visit {rom.name}
+                </Button>
+              </a>
+            </CardContent>
           </Card>
         ))}
       </section>
