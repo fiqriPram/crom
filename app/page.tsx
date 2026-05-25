@@ -22,7 +22,7 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="mx-auto grid w-full max-w-5xl grid-cols-1 gap-6 px-6 pb-24 sm:grid-cols-2 lg:grid-cols-3">
+      <section className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-6 px-6 pb-24 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6">
         {roms.map((rom) => (
           <Link key={rom.slug} href={`/roms/${rom.slug}`}>
             <Card

@@ -128,6 +128,233 @@ export const roms: Rom[] = [
       </svg>
     ),
   },
+  {
+    slug: "pixel-experience",
+    name: "Pixel Experience",
+    tagline: "Pure Google Pixel feel on any device",
+    description:
+      "A ROM based on AOSP that aims to provide the exact Google Pixel experience, with all Pixel features and minimal modifications.",
+    longDescription:
+      "Pixel Experience is a custom Android ROM that brings the authentic Google Pixel experience to a wide range of devices. Based on AOSP (Android Open Source Project), it focuses on delivering the stock Pixel look, feel, and features with minimal modifications. It's the go-to choice for users who want their non-Pixel device to feel exactly like a Google Pixel.",
+    benefits: [
+      "True Google Pixel experience on non-Pixel devices",
+      "All Pixel-exclusive features and apps included",
+      "Clean, bloatware-free system",
+      "Regular updates with security patches",
+      "Great for users who prefer stock Android",
+    ],
+    features: [
+      "Pixel Launcher & wallpapers",
+      "Pixel sounds & ringtones",
+      "Google Camera integration",
+      "At a Glance widget",
+      "Now Playing support",
+      "Stock Android stability",
+    ],
+    color: "text-zen-purple",
+    bgColor: "bg-zen-purple/10",
+    borderColor: "border-zen-purple/30",
+    ringColor: "ring-zen-purple/30",
+    url: "https://get.pixelexperience.org/",
+    thumbnail: (
+      <svg viewBox="0 0 64 64" fill="none" className="size-14">
+        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-purple/30" strokeWidth="1.5" />
+        <rect x="20" y="18" width="24" height="28" rx="5" fill="currentColor" className="text-zen-purple/20" />
+        <circle cx="32" cy="30" r="5" fill="currentColor" className="text-zen-purple/40" />
+        <path d="M26 42c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" className="text-zen-purple/60" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="38" cy="24" r="2" fill="currentColor" className="text-zen-purple/30" />
+      </svg>
+    ),
+  },
+  {
+    slug: "pixelos",
+    name: "PixelOS",
+    tagline: "AOSP with Pixel goodies & performance",
+    description:
+      "An AOSP-based ROM with Google apps included and all Pixel goodies, providing an experience similar to Google Pixel phones.",
+    longDescription:
+      "PixelOS is an AOSP-based ROM that comes with Google apps included and all Pixel goodies. It aims to provide an experience similar to Google Pixel phones with numerous performance enhancements and a small amount of useful additional features. It's perfect for users who want the Pixel experience with added performance tweaks.",
+    benefits: [
+      "Google apps included out of the box",
+      "All Pixel goodies and features",
+      "Performance enhancements over stock Pixel ROM",
+      "Small but useful set of additional features",
+      "Clean, lightweight AOSP base",
+    ],
+    features: [
+      "Pixel Launcher with Google Discover",
+      "Google Camera & Pixel apps included",
+      "Performance-optimized kernel",
+      "Useful additional customization",
+      "Monthly security updates",
+      "Active development community",
+    ],
+    color: "text-zen-teal",
+    bgColor: "bg-zen-teal/10",
+    borderColor: "border-zen-teal/30",
+    ringColor: "ring-zen-teal/30",
+    url: "https://pixelos.net/",
+    thumbnail: (
+      <svg viewBox="0 0 64 64" fill="none" className="size-14">
+        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-teal/30" strokeWidth="1.5" />
+        <path d="M20 28h24l-4-8H24l-4 8Z" fill="currentColor" className="text-zen-teal/20" />
+        <path d="M20 28v10c0 3.314 2.686 6 6 6h12c3.314 0 6-2.686 6-6V28" fill="currentColor" className="text-zen-teal/20" />
+        <path d="M20 28h24" stroke="currentColor" className="text-zen-teal/50" strokeWidth="1.5" />
+        <circle cx="32" cy="34" r="4" fill="currentColor" className="text-zen-teal/40" />
+        <path d="M28 40c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="currentColor" className="text-zen-teal/60" strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    slug: "nusantara",
+    name: "Nusantara ROM",
+    tagline: "Android OS dari Nusantara untuk siapa saja",
+    description:
+      "A clean, bloatware-free Android ROM developed with enthusiasm from Indonesia, focusing on privacy and customization.",
+    longDescription:
+      "Nusantara ROM is an Android operating system developed from Nusantara (Indonesia) for everyone. It focuses on delivering a clean, bloatware-free experience with useful customizations from various trusted sources. Developed by passionate developers, it gives users full control over their device with no ads, no bloatware, and a clean interface — all completely free.",
+    benefits: [
+      "Completely bloatware-free and ad-free experience",
+      "Developed by passionate, experienced developers",
+      "Features curated from trusted sources",
+      "Full user control over device privacy",
+      "Free and open-source — no cost ever",
+    ],
+    features: [
+      "Clean, bloatware-free interface",
+      "Customization from trusted sources",
+      "Privacy-first approach",
+      "Active Indonesian development community",
+      "Regular updates & improvements",
+      "Free for everyone",
+    ],
+    color: "text-zen-orange",
+    bgColor: "bg-zen-orange/10",
+    borderColor: "border-zen-orange/30",
+    ringColor: "ring-zen-orange/30",
+    url: "https://nusantararom.org/",
+    thumbnail: (
+      <svg viewBox="0 0 64 64" fill="none" className="size-14">
+        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-orange/30" strokeWidth="1.5" />
+        <path d="M20 22h24v20c0 5.523-4.477 10-10 10H30c-5.523 0-10-4.477-10-10V22Z" fill="currentColor" className="text-zen-orange/20" />
+        <path d="M24 28h16M24 34h16M24 40h8" stroke="currentColor" className="text-zen-orange/50" strokeWidth="1.5" strokeLinecap="round" />
+        <circle cx="44" cy="26" r="3" fill="currentColor" className="text-zen-orange/40" />
+      </svg>
+    ),
+  },
+  {
+    slug: "project-elixir",
+    name: "Project Elixir",
+    tagline: "Redefine simplicity with minimalistic design",
+    description:
+      "A clean and minimal AOSP-based custom ROM focusing on stock Android with thoughtful, balanced enhancements.",
+    longDescription:
+      "Project Elixir is a clean and minimal AOSP-based custom ROM that focuses on delivering the best of stock Android with thoughtful, balanced enhancements. Designed for users who value stability, performance, and clean UI, Elixir eliminates unnecessary bloat while still offering meaningful customization features. Built by experienced developers, it brings Android 16 with a minimalist design and the perfect balance of customization options.",
+    benefits: [
+      "Clean AOSP base with Pixel-like UI/UX",
+      "Lightweight and optimized for daily use",
+      "Monthly updates with security patches",
+      "Smooth performance & battery efficiency",
+      "Strong privacy and security focus",
+    ],
+    features: [
+      "Minimalist design with stock Android feel",
+      "iOS-inspired automated depth clock",
+      "Perfectly balanced customization",
+      "Android 16 (Baklava) based",
+      "Optimized for daily driver use",
+      "Experienced development team",
+    ],
+    color: "text-zen-pink",
+    bgColor: "bg-zen-pink/10",
+    borderColor: "border-zen-pink/30",
+    ringColor: "ring-zen-pink/30",
+    url: "https://projectelixiros.com/",
+    thumbnail: (
+      <svg viewBox="0 0 64 64" fill="none" className="size-14">
+        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-pink/30" strokeWidth="1.5" />
+        <path d="M24 18c-4.418 0-8 3.582-8 8v12c0 4.418 3.582 8 8 8h16c4.418 0 8-3.582 8-8V26c0-4.418-3.582-8-8-8H24Z" fill="currentColor" className="text-zen-pink/20" />
+        <path d="M28 32l3 3 6-6" stroke="currentColor" className="text-zen-pink/50" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="44" cy="24" r="3" fill="currentColor" className="text-zen-pink/40" />
+        <path d="M22 40c0-1.5 1.5-3 3-3h14c1.5 0 3 1.5 3 3" stroke="currentColor" className="text-zen-pink/30" strokeWidth="1.5" />
+      </svg>
+    ),
+  },
+  {
+    slug: "derpfest",
+    name: "DerpFest",
+    tagline: "Feature-rich AOSP with community-driven features",
+    description:
+      "An AOSP-based custom ROM twisted with the latest features from all over the Android development community.",
+    longDescription:
+      "DerpFest is an AOSP-based custom ROM that incorporates the best features from across the Android development community. Quality and stability are top priorities, bringing you the best Android has to offer. Now supporting Android 16 QPR2 with the latest security patches from Google, DerpFest continues to be one of the last open source custom ROMs still contributing code to the community.",
+    benefits: [
+      "Latest Android 16 QPR2 with Google security patches",
+      "Features curated from across the Android community",
+      "Strong focus on quality and stability",
+      "One of the last truly open-source ROMs",
+      "Active development with frequent updates",
+    ],
+    features: [
+      "Latest Android 16 QPR2 base",
+      "Community-driven feature set",
+      "Quality & stability first approach",
+      "Unique DerpFest contributions",
+      "Wide device support",
+      "Active Telegram community",
+    ],
+    color: "text-zen-yellow",
+    bgColor: "bg-zen-yellow/10",
+    borderColor: "border-zen-yellow/30",
+    ringColor: "ring-zen-yellow/30",
+    url: "https://derpfest.org/",
+    thumbnail: (
+      <svg viewBox="0 0 64 64" fill="none" className="size-14">
+        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-yellow/30" strokeWidth="1.5" />
+        <path d="M20 24c0-2.21 1.79-4 4-4h16c2.21 0 4 1.79 4 4v16c0 2.21-1.79 4-4 4H24c-2.21 0-4-1.79-4-4V24Z" fill="currentColor" className="text-zen-yellow/20" />
+        <path d="M28 28l4 4 4-4M28 36l4 4 4-4" stroke="currentColor" className="text-zen-yellow/50" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="44" cy="22" r="3" fill="currentColor" className="text-zen-yellow/40" />
+      </svg>
+    ),
+  },
+  {
+    slug: "blissroms",
+    name: "BlissRoms",
+    tagline: "Open-source OS focused on design, usability & security",
+    description:
+      "An open-source Android-based OS delivering a harmonious blend of customization, security, and performance across a wide range of devices.",
+    longDescription:
+      "BlissRoms is an open-source Android-based operating system built to deliver a harmonious blend of customization, security, and performance across a wide range of devices. Started in 2014 and based on LineageOS, BlissRoms focuses on bringing the open-source community a quality OS that can run on all your devices as a daily driver, syncing your apps, settings, and customizations across all platforms.",
+    benefits: [
+      "Harmonious blend of customization, security & performance",
+      "Based on LineageOS for a rock-solid foundation",
+      "Cross-platform support — phones, laptops & PCs",
+      "Daily driver quality with synced customizations",
+      "Active development since 2014",
+    ],
+    features: [
+      "Deep customization options",
+      "Enhanced security features",
+      "Performance optimizations",
+      "Cross-platform compatibility",
+      "LineageOS stable base",
+      "Active community support",
+    ],
+    color: "text-zen-lime",
+    bgColor: "bg-zen-lime/10",
+    borderColor: "border-zen-lime/30",
+    ringColor: "ring-zen-lime/30",
+    url: "https://blissroms.org/",
+    thumbnail: (
+      <svg viewBox="0 0 64 64" fill="none" className="size-14">
+        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-lime/30" strokeWidth="1.5" />
+        <path d="M20 24l12-8 12 8v16c0 2.21-1.79 4-4 4H24c-2.21 0-4-1.79-4-4V24Z" fill="currentColor" className="text-zen-lime/20" />
+        <path d="M20 24l12 4 12-4" stroke="currentColor" className="text-zen-lime/50" strokeWidth="1.5" />
+        <circle cx="32" cy="34" r="4" fill="currentColor" className="text-zen-lime/40" />
+        <circle cx="44" cy="22" r="2.5" fill="currentColor" className="text-zen-lime/30" />
+      </svg>
+    ),
+  },
 ]
 
 export function getRom(slug: string): Rom | undefined {

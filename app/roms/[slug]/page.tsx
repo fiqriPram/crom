@@ -47,6 +47,53 @@ export default async function RomPage({ params }: { params: Promise<{ slug: stri
                 <path d="M28 44c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
               </>
             )}
+            {rom.slug === "pixel-experience" && (
+              <>
+                <rect x="20" y="18" width="24" height="28" rx="5" fill="currentColor" className={`${rom.color}/20`} />
+                <circle cx="32" cy="30" r="5" fill="currentColor" className={`${rom.color}/40`} />
+                <path d="M26 42c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" className={`${rom.color}/60`} strokeWidth="1.5" strokeLinecap="round" />
+                <circle cx="38" cy="24" r="2" fill="currentColor" className={`${rom.color}/30`} />
+              </>
+            )}
+            {rom.slug === "pixelos" && (
+              <>
+                <path d="M20 28h24l-4-8H24l-4 8Z" fill="currentColor" className={`${rom.color}/20`} />
+                <path d="M20 28v10c0 3.314 2.686 6 6 6h12c3.314 0 6-2.686 6-6V28" fill="currentColor" className={`${rom.color}/20`} />
+                <path d="M20 28h24" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="1.5" />
+                <circle cx="32" cy="34" r="4" fill="currentColor" className={`${rom.color}/40`} />
+                <path d="M28 40c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="currentColor" className={`${rom.color}/60`} strokeWidth="1.5" strokeLinecap="round" />
+              </>
+            )}
+            {rom.slug === "nusantara" && (
+              <>
+                <path d="M20 22h24v20c0 5.523-4.477 10-10 10H30c-5.523 0-10-4.477-10-10V22Z" fill="currentColor" className={`${rom.color}/20`} />
+                <path d="M24 28h16M24 34h16M24 40h8" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="1.5" strokeLinecap="round" />
+                <circle cx="44" cy="26" r="3" fill="currentColor" className={`${rom.color}/40`} />
+              </>
+            )}
+            {rom.slug === "project-elixir" && (
+              <>
+                <path d="M24 18c-4.418 0-8 3.582-8 8v12c0 4.418 3.582 8 8 8h16c4.418 0 8-3.582 8-8V26c0-4.418-3.582-8-8-8H24Z" fill="currentColor" className={`${rom.color}/20`} />
+                <path d="M28 32l3 3 6-6" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <circle cx="44" cy="24" r="3" fill="currentColor" className={`${rom.color}/40`} />
+                <path d="M22 40c0-1.5 1.5-3 3-3h14c1.5 0 3 1.5 3 3" stroke="currentColor" className={`${rom.color}/30`} strokeWidth="1.5" />
+              </>
+            )}
+            {rom.slug === "derpfest" && (
+              <>
+                <path d="M20 24c0-2.21 1.79-4 4-4h16c2.21 0 4 1.79 4 4v16c0 2.21-1.79 4-4 4H24c-2.21 0-4-1.79-4-4V24Z" fill="currentColor" className={`${rom.color}/20`} />
+                <path d="M28 28l4 4 4-4M28 36l4 4 4-4" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                <circle cx="44" cy="22" r="3" fill="currentColor" className={`${rom.color}/40`} />
+              </>
+            )}
+            {rom.slug === "blissroms" && (
+              <>
+                <path d="M20 24l12-8 12 8v16c0 2.21-1.79 4-4 4H24c-2.21 0-4-1.79-4-4V24Z" fill="currentColor" className={`${rom.color}/20`} />
+                <path d="M20 24l12 4 12-4" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="1.5" />
+                <circle cx="32" cy="34" r="4" fill="currentColor" className={`${rom.color}/40`} />
+                <circle cx="44" cy="22" r="2.5" fill="currentColor" className={`${rom.color}/30`} />
+              </>
+            )}
           </svg>
         </div>
         <h1 className={`text-4xl font-semibold tracking-tight sm:text-5xl ${rom.color}`}>
