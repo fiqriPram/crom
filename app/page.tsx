@@ -26,13 +26,13 @@ export default function Home() {
         {roms.map((rom) => (
           <Link key={rom.slug} href={`/roms/${rom.slug}`}>
             <Card
-              className={`flex aspect-square cursor-pointer flex-col border-2 transition-all hover:ring-2 ${rom.borderColor} ${rom.color}/20`}
+              className={`group flex cursor-pointer flex-col border-2 ring-0 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg h-72 ${rom.borderColor}`}
             >
-              <CardHeader className="items-center gap-4 pt-8 text-center">
-                <div className={`flex items-center justify-center rounded-2xl ${rom.bgColor} p-4`}>
+              <CardHeader className="items-center gap-3 pt-6 text-center">
+                <div className={`flex items-center justify-center rounded-2xl ${rom.bgColor} p-4 transition-transform duration-300 group-hover:scale-110`}>
                   {rom.thumbnail}
                 </div>
-                <CardTitle className={`text-2xl ${rom.color}`}>
+                <CardTitle className={`text-2xl leading-tight ${rom.color}`}>
                   {rom.name}
                 </CardTitle>
               </CardHeader>
