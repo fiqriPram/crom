@@ -18,14 +18,25 @@ export function RomCard({ rom, index }: RomCardProps) {
   return (
     <Link href={`/roms/${rom.slug}`}>
       <Card
-        className={`group flex cursor-pointer flex-col border-2 ring-0 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:ring-2 ${rom.borderColor} ${rom.ringColor} h-72 animate-fade-in-up`}
+        className={`group relative flex cursor-pointer flex-col overflow-hidden border-2 ring-0 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:ring-2 ${rom.borderColor} ${rom.ringColor} h-72 animate-fade-in-up`}
         style={{ animationDelay: `${300 + index * 40}ms` }}
       >
-        <CardHeader className="items-center gap-3 pt-6 text-center">
+        <div
+          className={`absolute inset-x-0 top-0 h-1 opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${rom.bgColor}`}
+        />
+        <CardHeader className="items-center gap-3 pt-8 text-center">
           <div
-            className={`flex items-center justify-center rounded-2xl ${rom.bgColor} p-4 transition-all duration-300 group-hover:scale-110 group-hover:shadow-sm`}
+            className={`relative flex items-center justify-center rounded-2xl ${rom.bgColor} p-4 transition-all duration-300 group-hover:scale-110 group-hover:shadow-md`}
           >
-            {rom.thumbnail}
+            <img
+              src={rom.icon}
+              alt={`${rom.name} logo`}
+              className="size-14 rounded-xl object-contain"
+              loading="lazy"
+            />
+            <span
+              className={`absolute inset-0 rounded-2xl ring-1 ring-inset ${rom.ringColor} opacity-0 transition-opacity duration-300 group-hover:opacity-100`}
+            />
           </div>
           <CardTitle className={`text-xl leading-tight ${rom.color}`}>
             {rom.name}
@@ -35,6 +46,14 @@ export function RomCard({ rom, index }: RomCardProps) {
           <p className="text-xs text-muted-foreground leading-relaxed">
             {rom.tagline}
           </p>
+          <span
+            className={`mt-4 inline-flex items-center gap-1 text-xs font-medium ${rom.color} opacity-0 transition-all duration-300 group-hover:opacity-100`}
+          >
+            View ROM
+            <svg viewBox="0 0 16 16" fill="currentColor" className="size-3 transition-transform duration-300 group-hover:translate-x-0.5">
+              <path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z" />
+            </svg>
+          </span>
         </CardContent>
       </Card>
     </Link>

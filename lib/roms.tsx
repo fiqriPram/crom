@@ -11,7 +11,7 @@ export type Rom = {
   borderColor: string
   ringColor: string
   url: string
-  thumbnail: React.ReactNode
+  icon: string
 }
 
 export const roms: Rom[] = [
@@ -43,14 +43,7 @@ export const roms: Rom[] = [
     borderColor: "border-coral/20",
     ringColor: "ring-coral/30",
     url: "https://crdroid.net/",
-    thumbnail: (
-      <svg viewBox="0 0 64 64" fill="none" className="size-14">
-        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-coral/30" strokeWidth="1.5" />
-        <path d="M22 30c0-5.523 4.477-10 10-10s10 4.477 10 10v1c0 5.523-4.477 10-10 10s-10-4.477-10-10v-1Z" fill="currentColor" className="text-coral/20" />
-        <circle cx="32" cy="31" r="6" fill="currentColor" className="text-coral/50" />
-        <circle cx="32" cy="31" r="3" fill="currentColor" />
-      </svg>
-    ),
+    icon: "/rom-logos/crdroid.png",
   },
   {
     slug: "lineageos",
@@ -80,15 +73,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-blue/20",
     ringColor: "ring-zen-blue/30",
     url: "https://lineageos.org/",
-    thumbnail: (
-      <svg viewBox="0 0 64 64" fill="none" className="size-14">
-        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-blue/30" strokeWidth="1.5" />
-        <path d="M46 30c0 7.732-6.268 14-14 14s-14-6.268-14-14 6.268-14 14-14" stroke="currentColor" className="text-zen-blue/50" strokeWidth="2.5" strokeLinecap="round" fill="none" />
-        <path d="M46 30h-7l3.5-5 3.5 5Z" fill="currentColor" />
-        <circle cx="26" cy="30" r="2.5" fill="currentColor" className="text-zen-blue/60" />
-        <circle cx="38" cy="30" r="2.5" fill="currentColor" className="text-zen-blue/60" />
-      </svg>
-    ),
+    icon: "/rom-logos/lineageos.png",
   },
   {
     slug: "evolution-x",
@@ -118,15 +103,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-green/20",
     ringColor: "ring-zen-green/30",
     url: "https://evolution-x.org/",
-    thumbnail: (
-      <svg viewBox="0 0 64 64" fill="none" className="size-14">
-        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-green/30" strokeWidth="1.5" />
-        <path d="M22 22h20v14c0 5.523-4.477 10-10 10s-10-4.477-10-10V22Z" fill="currentColor" className="text-zen-green/20" />
-        <path d="M22 28h20" stroke="currentColor" className="text-zen-green/50" strokeWidth="2" strokeLinecap="round" />
-        <circle cx="32" cy="40" r="4" fill="currentColor" className="text-zen-green/40" />
-        <path d="M28 44c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
+    icon: "/rom-logos/evolution-x.png",
   },
   {
     slug: "pixel-experience",
@@ -156,15 +133,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-purple/30",
     ringColor: "ring-zen-purple/30",
     url: "https://get.pixelexperience.org/",
-    thumbnail: (
-      <svg viewBox="0 0 64 64" fill="none" className="size-14">
-        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-purple/30" strokeWidth="1.5" />
-        <rect x="20" y="18" width="24" height="28" rx="5" fill="currentColor" className="text-zen-purple/20" />
-        <circle cx="32" cy="30" r="5" fill="currentColor" className="text-zen-purple/40" />
-        <path d="M26 42c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" className="text-zen-purple/60" strokeWidth="1.5" strokeLinecap="round" />
-        <circle cx="38" cy="24" r="2" fill="currentColor" className="text-zen-purple/30" />
-      </svg>
-    ),
+    icon: "/rom-logos/pixel-experience.png",
   },
   {
     slug: "pixelos",
@@ -194,16 +163,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-teal/30",
     ringColor: "ring-zen-teal/30",
     url: "https://pixelos.net/",
-    thumbnail: (
-      <svg viewBox="0 0 64 64" fill="none" className="size-14">
-        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-teal/30" strokeWidth="1.5" />
-        <path d="M20 28h24l-4-8H24l-4 8Z" fill="currentColor" className="text-zen-teal/20" />
-        <path d="M20 28v10c0 3.314 2.686 6 6 6h12c3.314 0 6-2.686 6-6V28" fill="currentColor" className="text-zen-teal/20" />
-        <path d="M20 28h24" stroke="currentColor" className="text-zen-teal/50" strokeWidth="1.5" />
-        <circle cx="32" cy="34" r="4" fill="currentColor" className="text-zen-teal/40" />
-        <path d="M28 40c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="currentColor" className="text-zen-teal/60" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
+    icon: "/rom-logos/pixelos.png",
   },
   {
     slug: "nusantara",
@@ -233,14 +193,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-orange/30",
     ringColor: "ring-zen-orange/30",
     url: "https://nusantararom.org/",
-    thumbnail: (
-      <svg viewBox="0 0 64 64" fill="none" className="size-14">
-        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-orange/30" strokeWidth="1.5" />
-        <path d="M20 22h24v20c0 5.523-4.477 10-10 10H30c-5.523 0-10-4.477-10-10V22Z" fill="currentColor" className="text-zen-orange/20" />
-        <path d="M24 28h16M24 34h16M24 40h8" stroke="currentColor" className="text-zen-orange/50" strokeWidth="1.5" strokeLinecap="round" />
-        <circle cx="44" cy="26" r="3" fill="currentColor" className="text-zen-orange/40" />
-      </svg>
-    ),
+    icon: "/rom-logos/nusantara.png",
   },
   {
     slug: "project-elixir",
@@ -270,15 +223,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-pink/30",
     ringColor: "ring-zen-pink/30",
     url: "https://projectelixiros.com/",
-    thumbnail: (
-      <svg viewBox="0 0 64 64" fill="none" className="size-14">
-        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-pink/30" strokeWidth="1.5" />
-        <path d="M24 18c-4.418 0-8 3.582-8 8v12c0 4.418 3.582 8 8 8h16c4.418 0 8-3.582 8-8V26c0-4.418-3.582-8-8-8H24Z" fill="currentColor" className="text-zen-pink/20" />
-        <path d="M28 32l3 3 6-6" stroke="currentColor" className="text-zen-pink/50" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="44" cy="24" r="3" fill="currentColor" className="text-zen-pink/40" />
-        <path d="M22 40c0-1.5 1.5-3 3-3h14c1.5 0 3 1.5 3 3" stroke="currentColor" className="text-zen-pink/30" strokeWidth="1.5" />
-      </svg>
-    ),
+    icon: "/rom-logos/project-elixir.png",
   },
   {
     slug: "derpfest",
@@ -308,14 +253,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-yellow/30",
     ringColor: "ring-zen-yellow/30",
     url: "https://derpfest.org/",
-    thumbnail: (
-      <svg viewBox="0 0 64 64" fill="none" className="size-14">
-        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-yellow/30" strokeWidth="1.5" />
-        <path d="M20 24c0-2.21 1.79-4 4-4h16c2.21 0 4 1.79 4 4v16c0 2.21-1.79 4-4 4H24c-2.21 0-4-1.79-4-4V24Z" fill="currentColor" className="text-zen-yellow/20" />
-        <path d="M28 28l4 4 4-4M28 36l4 4 4-4" stroke="currentColor" className="text-zen-yellow/50" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="44" cy="22" r="3" fill="currentColor" className="text-zen-yellow/40" />
-      </svg>
-    ),
+    icon: "/rom-logos/derpfest.png",
   },
   {
     slug: "blissroms",
@@ -345,15 +283,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-lime/30",
     ringColor: "ring-zen-lime/30",
     url: "https://blissroms.org/",
-    thumbnail: (
-      <svg viewBox="0 0 64 64" fill="none" className="size-14">
-        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-lime/30" strokeWidth="1.5" />
-        <path d="M20 24l12-8 12 8v16c0 2.21-1.79 4-4 4H24c-2.21 0-4-1.79-4-4V24Z" fill="currentColor" className="text-zen-lime/20" />
-        <path d="M20 24l12 4 12-4" stroke="currentColor" className="text-zen-lime/50" strokeWidth="1.5" />
-        <circle cx="32" cy="34" r="4" fill="currentColor" className="text-zen-lime/40" />
-        <circle cx="44" cy="22" r="2.5" fill="currentColor" className="text-zen-lime/30" />
-      </svg>
-    ),
+    icon: "/rom-logos/blissroms.png",
   },
   {
     slug: "voltageos",
@@ -383,53 +313,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-rose/30",
     ringColor: "ring-zen-rose/30",
     url: "https://www.voltageos.com/",
-    thumbnail: (
-      <svg viewBox="0 0 64 64" fill="none" className="size-14">
-        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-rose/30" strokeWidth="1.5" />
-        <path d="M24 20h16c2.21 0 4 1.79 4 4v8l-6 6H24c-2.21 0-4-1.79-4-4V24c0-2.21 1.79-4 4-4Z" fill="currentColor" className="text-zen-rose/20" />
-        <path d="M24 28h16M24 34h10" stroke="currentColor" className="text-zen-rose/50" strokeWidth="1.5" strokeLinecap="round" />
-        <circle cx="44" cy="22" r="2.5" fill="currentColor" className="text-zen-rose/30" />
-        <path d="M38 38l6-6v4c0 2.21-1.79 4-4 4h-2Z" fill="currentColor" className="text-zen-rose/20" />
-      </svg>
-    ),
-  },
-  {
-    slug: "projectblaze",
-    name: "Project Blaze",
-    tagline: "Enhanced Android with customizable features",
-    description:
-      "An AOSP-based custom ROM with GAPPS and VANILLA variants, focusing on optimized performance, security, and medium-to-minimal customizations.",
-    longDescription:
-      "Project Blaze is a custom Android ROM based on AOSP that delivers an enhanced Android experience with customizable features, optimized performance, and strong security. Available in both GAPPS and VANILLA variants, it supports 15+ official devices. Blaze focuses on providing medium to minimal customizations — just the right amount to make your device feel personal without overwhelming you. Built on Android 14 (with past versions on 13 and 12.1), it ships with the latest security patches for a stable and secure daily driver.",
-    benefits: [
-      "Available in both GAPPS and VANILLA variants for user flexibility",
-      "Latest security patches for enhanced protection",
-      "Medium to minimal customizations — balanced and clean",
-      "Optimized for performance and battery efficiency",
-      "Active development with official device support",
-    ],
-    features: [
-      "AOSP-based clean foundation",
-      "GAPPS & VANILLA variants",
-      "Optimized performance tuning",
-      "Latest security patches",
-      "Medium-to-minimal customizations",
-      "15+ officially supported devices",
-    ],
-    color: "text-zen-sky",
-    bgColor: "bg-zen-sky/10",
-    borderColor: "border-zen-sky/30",
-    ringColor: "ring-zen-sky/30",
-    url: "https://www.projectblaze.me/",
-    thumbnail: (
-      <svg viewBox="0 0 64 64" fill="none" className="size-14">
-        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-sky/30" strokeWidth="1.5" />
-        <path d="M32 16l10 12c4 4.5 4 11 0 15.5-2 2.5-5 4-8 4s-6-1.5-8-4c-4-4.5-4-11 0-15.5l8-12Z" fill="currentColor" className="text-zen-sky/20" />
-        <path d="M32 16l6 8c3 3.5 3 8 0 11-1.5 2-3.5 3-6 3s-4.5-1-6-3c-3-3-3-7.5 0-11l6-8Z" fill="currentColor" className="text-zen-sky/30" />
-        <path d="M30 28l2 4 2-4" stroke="currentColor" className="text-zen-sky/60" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="32" cy="38" r="2.5" fill="currentColor" />
-      </svg>
-    ),
+    icon: "/rom-logos/voltageos.png",
   },
   {
     slug: "grapheneos",
@@ -459,16 +343,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-gray/30",
     ringColor: "ring-zen-gray/30",
     url: "https://grapheneos.org/",
-    thumbnail: (
-      <svg viewBox="0 0 64 64" fill="none" className="size-14">
-        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-gray/30" strokeWidth="1.5" />
-        <rect x="22" y="22" width="20" height="20" rx="3" fill="currentColor" className="text-zen-gray/20" />
-        <path d="M26 28v-2a6 6 0 0112 0v2" stroke="currentColor" className="text-zen-gray/50" strokeWidth="2" strokeLinecap="round" />
-        <rect x="24" y="28" width="16" height="14" rx="2" fill="currentColor" className="text-zen-gray/30" />
-        <circle cx="32" cy="35" r="2" fill="currentColor" className="text-zen-gray/60" />
-        <path d="M32 37v2" stroke="currentColor" className="text-zen-gray/60" strokeWidth="1.5" strokeLinecap="round" />
-      </svg>
-    ),
+    icon: "/rom-logos/grapheneos.png",
   },
   {
     slug: "superioros",
@@ -498,14 +373,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-indigo/30",
     ringColor: "ring-zen-indigo/30",
     url: "https://superioros.github.io/",
-    thumbnail: (
-      <svg viewBox="0 0 64 64" fill="none" className="size-14">
-        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-indigo/30" strokeWidth="1.5" />
-        <path d="M22 26c0-2.21 1.79-4 4-4h12c2.21 0 4 1.79 4 4v12c0 2.21-1.79 4-4 4H26c-2.21 0-4-1.79-4-4V26Z" fill="currentColor" className="text-zen-indigo/20" />
-        <path d="M28 28l4 4-4 4M32 36h6" stroke="currentColor" className="text-zen-indigo/50" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="44" cy="24" r="2.5" fill="currentColor" className="text-zen-indigo/30" />
-      </svg>
-    ),
+    icon: "/rom-logos/superioros.png",
   },
 ]
 

@@ -24,7 +24,11 @@ export default async function RomPage({ params }: { params: Promise<{ slug: stri
         <div
           className={`flex items-center justify-center rounded-2xl ${rom.bgColor} p-5 transition-transform duration-300 hover:scale-105`}
         >
-          <div className="size-20 [&_svg]:size-20">{rom.thumbnail}</div>
+          <img
+            src={rom.icon}
+            alt={`${rom.name} logo`}
+            className="size-20 rounded-2xl object-contain"
+          />
         </div>
         <h1 className={`text-4xl font-semibold tracking-tight sm:text-5xl ${rom.color}`}>
           {rom.name}
