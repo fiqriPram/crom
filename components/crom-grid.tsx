@@ -1,11 +1,9 @@
 "use client"
 
-import { useMemo, useState } from "react"
+import { useMemo } from "react"
 import { roms } from "@/lib/croms"
 import { CromCard } from "@/components/crom-card"
 import type { Filter } from "@/app/page"
-
-type Sort = "name-asc" | "name-desc"
 
 interface CromGridProps {
   filter: Filter
@@ -13,18 +11,13 @@ interface CromGridProps {
 }
 
 export function CromGrid({ filter, onFilterChange }: CromGridProps) {
-  const [sort, setSort] = useState<Sort>("name-asc")
-
   const items = useMemo(() => {
     let list = roms
     if (filter !== "all") {
       list = list.filter((rom) => rom.type === filter)
     }
-    return [...list].sort((a, b) => {
-      if (sort === "name-asc") return a.name.localeCompare(b.name)
-      return b.name.localeCompare(a.name)
-    })
-  }, [filter, sort])
+    return [...list]
+  }, [filter])
 
   const counts = useMemo(
     () => ({
@@ -52,7 +45,7 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
         </h2>
       </div>
 
-      <div className="mb-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:justify-between">
+      <div className="mb-8 flex items-center justify-center">
         <div className="flex items-center gap-1 rounded-xl border border-border bg-card p-1">
           {filters.map((f) => (
             <button
@@ -67,25 +60,6 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
               {f.label}
             </button>
           ))}
-        </div>
-
-        <div className="flex items-center gap-2">
-          <span className="text-sm text-muted-foreground">Sort</span>
-          <button
-            onClick={() =>
-              setSort((s) => (s === "name-asc" ? "name-desc" : "name-asc"))
-            }
-            className="flex items-center gap-1.5 rounded-lg border border-border bg-card px-3 py-1.5 text-sm font-medium transition-colors hover:bg-accent"
-          >
-            Name
-            <svg
-              viewBox="0 0 16 16"
-              fill="currentColor"
-              className={`size-3 transition-transform ${sort === "name-desc" ? "rotate-180" : ""}`}
-            >
-              <path d="M8 2.75a.75.75 0 0 1 .53.22l4.25 4.25a.75.75 0 0 1-1.06 1.06L8.75 5.06v8.19a.75.75 0 0 1-1.5 0V5.06L5.28 8.28a.75.75 0 1 1-1.06-1.06l4.25-4.25a.75.75 0 0 1 .53-.22Z" />
-            </svg>
-          </button>
         </div>
       </div>
 
