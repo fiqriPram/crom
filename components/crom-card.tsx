@@ -7,16 +7,16 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import type { Rom } from "@/lib/roms"
+import type { Rom } from "@/lib/croms"
 
-interface RomCardProps {
+interface CromCardProps {
   rom: Rom
   index: number
 }
 
-export function RomCard({ rom, index }: RomCardProps) {
+export function CromCard({ rom, index }: CromCardProps) {
   return (
-    <Link href={`/roms/${rom.slug}`}>
+    <Link href={`/crom/${rom.slug}`}>
       <Card
         className={`group relative flex cursor-pointer flex-col overflow-hidden border-2 ring-0 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:ring-2 ${rom.borderColor} ${rom.ringColor} h-72 animate-fade-in-up`}
         style={{ animationDelay: `${300 + index * 40}ms` }}

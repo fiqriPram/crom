@@ -1,4 +1,4 @@
-import { roms } from "@/lib/roms"
+import { roms } from "@/lib/croms"
 
 export function Footer() {
   return (

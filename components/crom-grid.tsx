@@ -1,13 +1,13 @@
 "use client"
 
 import { useMemo, useState } from "react"
-import { roms } from "@/lib/roms"
-import { RomCard } from "@/components/rom-card"
+import { roms } from "@/lib/croms"
+import { CromCard } from "@/components/crom-card"
 
 type Filter = "all" | "rom" | "os"
 type Sort = "name-asc" | "name-desc"
 
-export function RomGrid() {
+export function CromGrid() {
   const [filter, setFilter] = useState<Filter>("all")
   const [sort, setSort] = useState<Sort>("name-asc")
 
@@ -92,7 +92,7 @@ export function RomGrid() {
       ) : (
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {items.map((rom, i) => (
-            <RomCard key={rom.slug} rom={rom} index={i} />
+            <CromCard key={rom.slug} rom={rom} index={i} />
           ))}
         </div>
       )}

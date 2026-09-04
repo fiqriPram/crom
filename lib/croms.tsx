@@ -45,7 +45,7 @@ export const roms: Rom[] = [
     borderColor: "border-coral/20",
     ringColor: "ring-coral/30",
     url: "https://crdroid.net/",
-    icon: "/rom-logos/crdroid.png",
+    icon: "/crom-logos/crdroid.png",
   },
   {
     slug: "lineageos",
@@ -76,7 +76,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-blue/20",
     ringColor: "ring-zen-blue/30",
     url: "https://lineageos.org/",
-    icon: "/rom-logos/lineageos.png",
+    icon: "/crom-logos/lineageos.png",
   },
   {
     slug: "evolution-x",
@@ -107,7 +107,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-green/20",
     ringColor: "ring-zen-green/30",
     url: "https://evolution-x.org/",
-    icon: "/rom-logos/evolution-x.png",
+    icon: "/crom-logos/evolution-x.png",
   },
   {
     slug: "pixel-experience",
@@ -138,7 +138,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-purple/30",
     ringColor: "ring-zen-purple/30",
     url: "https://get.pixelexperience.org/",
-    icon: "/rom-logos/pixel-experience.png",
+    icon: "/crom-logos/pixel-experience.png",
   },
   {
     slug: "pixelos",
@@ -169,7 +169,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-teal/30",
     ringColor: "ring-zen-teal/30",
     url: "https://pixelos.net/",
-    icon: "/rom-logos/pixelos.png",
+    icon: "/crom-logos/pixelos.png",
   },
   {
     slug: "nusantara",
@@ -200,7 +200,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-orange/30",
     ringColor: "ring-zen-orange/30",
     url: "https://nusantararom.org/",
-    icon: "/rom-logos/nusantara.png",
+    icon: "/crom-logos/nusantara.png",
   },
   {
     slug: "project-elixir",
@@ -231,7 +231,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-pink/30",
     ringColor: "ring-zen-pink/30",
     url: "https://projectelixiros.com/",
-    icon: "/rom-logos/project-elixir.png",
+    icon: "/crom-logos/project-elixir.png",
   },
   {
     slug: "derpfest",
@@ -262,7 +262,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-yellow/30",
     ringColor: "ring-zen-yellow/30",
     url: "https://derpfest.org/",
-    icon: "/rom-logos/derpfest.png",
+    icon: "/crom-logos/derpfest.png",
   },
   {
     slug: "blissroms",
@@ -293,7 +293,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-lime/30",
     ringColor: "ring-zen-lime/30",
     url: "https://blissroms.org/",
-    icon: "/rom-logos/blissroms.png",
+    icon: "/crom-logos/blissroms.png",
   },
   {
     slug: "voltageos",
@@ -324,7 +324,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-rose/30",
     ringColor: "ring-zen-rose/30",
     url: "https://www.voltageos.com/",
-    icon: "/rom-logos/voltageos.png",
+    icon: "/crom-logos/voltageos.png",
   },
   {
     slug: "grapheneos",
@@ -355,7 +355,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-gray/30",
     ringColor: "ring-zen-gray/30",
     url: "https://grapheneos.org/",
-    icon: "/rom-logos/grapheneos.png",
+    icon: "/crom-logos/grapheneos.png",
   },
   {
     slug: "superioros",
@@ -386,7 +386,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-indigo/30",
     ringColor: "ring-zen-indigo/30",
     url: "https://superioros.github.io/",
-    icon: "/rom-logos/superioros.png",
+    icon: "/crom-logos/superioros.png",
   },
 ]
 

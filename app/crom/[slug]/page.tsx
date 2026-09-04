@@ -7,7 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { getRom, roms } from "@/lib/roms"
+import { getRom, roms } from "@/lib/croms"
 
 export function generateStaticParams() {
   return roms.map((rom) => ({ slug: rom.slug }))
