@@ -13,11 +13,8 @@ interface CromGridProps {
 export function CromGrid({ filter, onFilterChange }: CromGridProps) {
   const [showFilters, setShowFilters] = useState(false);
   const items = useMemo(() => {
-    let list = roms;
-    if (filter !== "all") {
-      list = list.filter((rom) => rom.type === filter);
-    }
-    return [...list];
+    if (filter === "all") return [];
+    return roms.filter((rom) => rom.type === filter);
   }, [filter]);
 
   const counts = useMemo(
@@ -31,7 +28,6 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
   );
 
   const filters: { key: Filter; label: string }[] = [
-    { key: "all", label: `All (${counts.all})` },
     { key: "rom", label: `ROM (${counts.rom})` },
     { key: "os", label: `OS (${counts.os})` },
     { key: "tools", label: `Tools (${counts.tools})` },
@@ -52,8 +48,8 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
         <div className="flex items-center gap-1 rounded-xl border border-border bg-card p-1">
           <button
             onClick={() => {
-              onFilterChange("all");
               setShowFilters(!showFilters);
+              if (filter !== "all") onFilterChange("all");
             }}
             className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
               filter === "all"
@@ -64,29 +60,23 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
             {`Open (${counts.all})`}
           </button>
           {showFilters &&
-            filters
-              .filter((f) => f.key !== "all")
-              .map((f) => (
-                <button
-                  key={f.key}
-                  onClick={() => onFilterChange(f.key)}
-                  className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
-                    filter === f.key
-                      ? "bg-coral text-white"
-                      : "text-muted-foreground hover:text-foreground"
-                  }`}
-                >
-                  {f.label}
-                </button>
-              ))}
+            filters.map((f) => (
+              <button
+                key={f.key}
+                onClick={() => onFilterChange(f.key)}
+                className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
+                  filter === f.key
+                    ? "bg-coral text-white"
+                    : "text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                {f.label}
+              </button>
+            ))}
         </div>
       </div>
 
-      {items.length === 0 ? (
-        <p className="py-16 text-center text-sm text-muted-foreground">
-          No entries in this category yet.
-        </p>
-      ) : (
+      {items.length > 0 && (
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {items.map((rom, i) => (
             <CromCard key={rom.slug} rom={rom} index={i} />
