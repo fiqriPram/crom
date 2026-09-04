@@ -21,7 +21,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "crom Directory — Custom Operating Systems",
   description:
-    "Discover the best custom operating systems to improve performance, privacy, and customization on your device.",
+    "Discover a directory of custom ROMs, operating systems, and tools to boost performance, privacy, and customization on your device.",
 };
 
 export default function RootLayout({

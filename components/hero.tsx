@@ -18,8 +18,8 @@ export function Hero({ filter }: HeroProps) {
       </div>
       <div className="animate-fade-in-up [animation-delay:100ms] [animation-fill-mode:both]">
         <p className="max-w-lg text-lg text-muted-foreground">
-          Discover the best custom operating systems to improve performance,
-          privacy, and customization on your device.
+          Discover a directory of custom ROMs, operating systems, and tools
+          to boost performance, privacy, and customization on your device.
         </p>
       </div>
       <div className="animate-fade-in-up [animation-delay:200ms] [animation-fill-mode:both]">
