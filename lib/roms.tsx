@@ -432,6 +432,45 @@ export const roms: Rom[] = [
     ),
   },
   {
+    slug: "grapheneos",
+    name: "GrapheneOS",
+    tagline: "Security-hardened & privacy-focused mobile OS",
+    description:
+      "A privacy and security-focused mobile OS with applied security hardening, exploit mitigations, and Sandboxed Google Play compatibility.",
+    longDescription:
+      "GrapheneOS is a private and secure mobile operating system with special emphasis on security and privacy. It's based on the Android Open Source Project with significant hardening of the privacy and security model. Running on Google Pixel devices, it provides extensive exploit mitigations, a hardened memory allocator, a sandboxed Google Play compatibility layer, and a robust verified boot chain. GrapheneOS is the gold standard for mobile security, used by journalists, activists, and security-conscious individuals worldwide.",
+    benefits: [
+      "Industry-leading security hardening and exploit mitigations",
+      "Full Google Play compatibility via sandboxed environment",
+      "No tracking, telemetry, or data collection",
+      "Verified boot chain with secure enclave integration",
+      "Timely security updates — often faster than Google",
+    ],
+    features: [
+      "Hardened memory allocator (Scudo)",
+      "Sandboxed Google Play support",
+      "Vanadium hardened web browser",
+      "Attestation & verification tools",
+      "Secure contact discovery",
+      "Permission auto-reset & network permission",
+    ],
+    color: "text-zen-gray",
+    bgColor: "bg-zen-gray/10",
+    borderColor: "border-zen-gray/30",
+    ringColor: "ring-zen-gray/30",
+    url: "https://grapheneos.org/",
+    thumbnail: (
+      <svg viewBox="0 0 64 64" fill="none" className="size-14">
+        <circle cx="32" cy="32" r="28" stroke="currentColor" className="text-zen-gray/30" strokeWidth="1.5" />
+        <rect x="22" y="22" width="20" height="20" rx="3" fill="currentColor" className="text-zen-gray/20" />
+        <path d="M26 28v-2a6 6 0 0112 0v2" stroke="currentColor" className="text-zen-gray/50" strokeWidth="2" strokeLinecap="round" />
+        <rect x="24" y="28" width="16" height="14" rx="2" fill="currentColor" className="text-zen-gray/30" />
+        <circle cx="32" cy="35" r="2" fill="currentColor" className="text-zen-gray/60" />
+        <path d="M32 37v2" stroke="currentColor" className="text-zen-gray/60" strokeWidth="1.5" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
     slug: "superioros",
     name: "SuperiorOS",
     tagline: "Elevate your Android experience with AOSP",
