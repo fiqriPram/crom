@@ -789,7 +789,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-orange/30",
     ringColor: "ring-zen-orange/30",
     url: "https://orangefox.tech/",
-    icon: "/crom-logos/rom/orangefox.png",
+    icon: "/crom-logos/tools/orangefox.png",
   },
   {
     slug: "ventoy",
@@ -820,7 +820,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-orange/30",
     ringColor: "ring-zen-orange/30",
     url: "https://www.ventoy.net/en/index.html",
-    icon: "/crom-logos/linux/ventoy.png",
+    icon: "/crom-logos/tools/ventoy.png",
   },
   {
     slug: "balenaetcher",
@@ -851,7 +851,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-gray/30",
     ringColor: "ring-zen-gray/30",
     url: "https://etcher.balena.io/",
-    icon: "/crom-logos/linux/balenaetcher.png",
+    icon: "/crom-logos/tools/balenaetcher.png",
   },
 ]
 
