@@ -3,12 +3,16 @@
 import { useMemo, useState } from "react"
 import { roms } from "@/lib/croms"
 import { CromCard } from "@/components/crom-card"
+import type { Filter } from "@/app/page"
 
-type Filter = "all" | "rom" | "os"
 type Sort = "name-asc" | "name-desc"
 
-export function CromGrid() {
-  const [filter, setFilter] = useState<Filter>("all")
+interface CromGridProps {
+  filter: Filter
+  onFilterChange: (filter: Filter) => void
+}
+
+export function CromGrid({ filter, onFilterChange }: CromGridProps) {
   const [sort, setSort] = useState<Sort>("name-asc")
 
   const items = useMemo(() => {
@@ -53,7 +57,7 @@ export function CromGrid() {
           {filters.map((f) => (
             <button
               key={f.key}
-              onClick={() => setFilter(f.key)}
+              onClick={() => onFilterChange(f.key)}
               className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
                 filter === f.key
                   ? "bg-coral text-white"

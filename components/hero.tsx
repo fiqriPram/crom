@@ -1,6 +1,14 @@
 import { roms } from "@/lib/croms"
+import type { Filter } from "@/app/page"
 
-export function Hero() {
+interface HeroProps {
+  filter: Filter
+}
+
+export function Hero({ filter }: HeroProps) {
+  const count =
+    filter === "all" ? roms.length : roms.filter((r) => r.type === filter).length
+
   return (
     <section className="flex flex-col items-center gap-6 px-6 pt-24 pb-16 text-center sm:pt-32">
       <div className="animate-fade-in-up">
@@ -16,7 +24,7 @@ export function Hero() {
       </div>
       <div className="animate-fade-in-up [animation-delay:200ms] [animation-fill-mode:both]">
         <p className="text-sm text-muted-foreground/60">
-          {roms.length} entries available
+          {count} entries available
         </p>
       </div>
     </section>
