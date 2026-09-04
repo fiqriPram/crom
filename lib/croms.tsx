@@ -45,7 +45,7 @@ export const roms: Rom[] = [
     borderColor: "border-coral/20",
     ringColor: "ring-coral/30",
     url: "https://crdroid.net/",
-    icon: "/crom-logos/crdroid.png",
+    icon: "/crom-logos/rom/crdroid.png",
   },
   {
     slug: "lineageos",
@@ -76,7 +76,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-blue/20",
     ringColor: "ring-zen-blue/30",
     url: "https://lineageos.org/",
-    icon: "/crom-logos/lineageos.png",
+    icon: "/crom-logos/rom/lineageos.png",
   },
   {
     slug: "evolution-x",
@@ -107,7 +107,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-green/20",
     ringColor: "ring-zen-green/30",
     url: "https://evolution-x.org/",
-    icon: "/crom-logos/evolution-x.png",
+    icon: "/crom-logos/rom/evolution-x.png",
   },
   {
     slug: "pixel-experience",
@@ -138,7 +138,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-purple/30",
     ringColor: "ring-zen-purple/30",
     url: "https://get.pixelexperience.org/",
-    icon: "/crom-logos/pixel-experience.png",
+    icon: "/crom-logos/rom/pixel-experience.png",
   },
   {
     slug: "pixelos",
@@ -169,7 +169,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-teal/30",
     ringColor: "ring-zen-teal/30",
     url: "https://pixelos.net/",
-    icon: "/crom-logos/pixelos.png",
+    icon: "/crom-logos/rom/pixelos.png",
   },
   {
     slug: "nusantara",
@@ -200,7 +200,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-orange/30",
     ringColor: "ring-zen-orange/30",
     url: "https://nusantararom.org/",
-    icon: "/crom-logos/nusantara.png",
+    icon: "/crom-logos/rom/nusantara.png",
   },
   {
     slug: "project-elixir",
@@ -231,7 +231,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-pink/30",
     ringColor: "ring-zen-pink/30",
     url: "https://projectelixiros.com/",
-    icon: "/crom-logos/project-elixir.png",
+    icon: "/crom-logos/rom/project-elixir.png",
   },
   {
     slug: "derpfest",
@@ -262,7 +262,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-yellow/30",
     ringColor: "ring-zen-yellow/30",
     url: "https://derpfest.org/",
-    icon: "/crom-logos/derpfest.png",
+    icon: "/crom-logos/rom/derpfest.png",
   },
   {
     slug: "blissroms",
@@ -293,7 +293,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-lime/30",
     ringColor: "ring-zen-lime/30",
     url: "https://blissroms.org/",
-    icon: "/crom-logos/blissroms.png",
+    icon: "/crom-logos/rom/blissroms.png",
   },
   {
     slug: "voltageos",
@@ -324,7 +324,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-rose/30",
     ringColor: "ring-zen-rose/30",
     url: "https://www.voltageos.com/",
-    icon: "/crom-logos/voltageos.png",
+    icon: "/crom-logos/rom/voltageos.png",
   },
   {
     slug: "grapheneos",
@@ -355,7 +355,7 @@ export const roms: Rom[] = [
     borderColor: "border-zen-gray/30",
     ringColor: "ring-zen-gray/30",
     url: "https://grapheneos.org/",
-    icon: "/crom-logos/grapheneos.png",
+    icon: "/crom-logos/rom/grapheneos.png",
   },
   {
     slug: "superioros",
@@ -386,7 +386,38 @@ export const roms: Rom[] = [
     borderColor: "border-zen-indigo/30",
     ringColor: "ring-zen-indigo/30",
     url: "https://superioros.github.io/",
-    icon: "/crom-logos/superioros.png",
+    icon: "/crom-logos/rom/superioros.png",
+  },
+  {
+    slug: "linuxmint",
+    name: "Linux Mint",
+    type: "os",
+    tagline: "Elegant, comfortable & free desktop OS",
+    description:
+      "A free, open-source Linux distribution designed for ease of use, comfort, and out-of-the-box productivity for everyday computing.",
+    longDescription:
+      "Linux Mint is a community-driven Linux distribution based on Ubuntu, focused on making modern, secure and elegant desktop operating systems that are powerful and easy to use. It comes with a variety of desktop environments and built-in applications, providing a comfortable experience for newcomers and power users alike. Built on the shoulders of Debian and Ubuntu, Linux Mint is one of the most popular desktop Linux distributions in the world for good reason — it just works.",
+    benefits: [
+      "Free and open-source — no cost, no ads, no telemetry",
+      "Easy to install and ideal for Linux newcomers",
+      "Built-in multimedia codecs and everyday apps out of the box",
+      "Based on the rock-solid Ubuntu/Debian foundation",
+      "Active community with long-term support releases",
+    ],
+    features: [
+      "Cinnamon, MATE & Xfce desktop environments",
+      "Update Manager with safe, curated updates",
+      "Software Manager for easy app installation",
+      "Timeshift system snapshots & rollback",
+      "Dark mode and desktop theming",
+      "Long-term support (LTS) releases",
+    ],
+    color: "text-zen-green",
+    bgColor: "bg-zen-green/10",
+    borderColor: "border-zen-green/30",
+    ringColor: "ring-zen-green/30",
+    url: "https://linuxmint.com/",
+    icon: "/crom-logos/linux/linuxmint.png",
   },
 ]
 
