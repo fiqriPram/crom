@@ -1,7 +1,7 @@
 export type Rom = {
   slug: string
   name: string
-  type: "rom" | "os"
+  type: "rom" | "os" | "tools"
   tagline: string
   description: string
   longDescription: string
@@ -759,6 +759,99 @@ export const roms: Rom[] = [
     ringColor: "ring-zen-orange/30",
     url: "https://system76.com/pop",
     icon: "/crom-logos/linux/popos.png",
+  },
+  {
+    slug: "orangefox",
+    name: "OrangeFox",
+    type: "tools",
+    tagline: "A powerful custom recovery for Android",
+    description:
+      "A feature-rich custom recovery built on TeamWin Recovery Project, designed for easy flashing, backup, restore and device management.",
+    longDescription:
+      "OrangeFox is a modern custom recovery for Android devices, based on the popular TeamWin Recovery Project (TWRP). It offers a clean and colorful interface with a wide range of features including nandroid backups, ZIP and image flashing, file management, theme support and an integrated terminal. Because it is open source and supports many devices, OrangeFox is a go-to tool for flashing custom ROMs, rooting devices, and recovering from soft-bricked Android phones.",
+    benefits: [
+      "Full nandroid backup and restore",
+      "Easy flashing of ROMs, kernels and mods",
+      "Supports many devices and kernels",
+      "Open source and actively maintained",
+      "Themes and customizable interface",
+    ],
+    features: [
+      "ZIP and image install support",
+      "Nandroid backup and restore",
+      "File manager and terminal",
+      "Sideload and ADB support",
+      "Theme engine and customization",
+      "Based on TeamWin Recovery (TWRP)",
+    ],
+    color: "text-zen-orange",
+    bgColor: "bg-zen-orange/10",
+    borderColor: "border-zen-orange/30",
+    ringColor: "ring-zen-orange/30",
+    url: "https://orangefox.tech/",
+    icon: "/crom-logos/rom/orangefox.png",
+  },
+  {
+    slug: "ventoy",
+    name: "Ventoy",
+    type: "tools",
+    tagline: "A multi-boot USB tool for OSs and ISOs",
+    description:
+      "An open-source tool that creates a bootable USB drive where you can simply copy and paste ISO files and boot them directly — no reformatting needed.",
+    longDescription:
+      "Ventoy is a free and open-source tool that turns a USB drive into a multi-boot device. Instead of flashing ISOs one by one, you simply copy your ISO, WIM, IMG, VHD(x) and EFI files onto the drive, and Ventoy presents a boot menu of everything on it. It supports many operating systems and images, works on both BIOS and UEFI systems, and lets you add or remove bootable images at any time without reformatting. Ventoy is an invaluable tool for anyone who frequently installs operating systems or maintains bootable rescue media.",
+    benefits: [
+      "Boot multiple ISOs from a single USB drive",
+      "Just copy files — no reformatting to add more",
+      "Works with Windows, Linux, and more",
+      "Supports BIOS and UEFI boot modes",
+      "Free and open source",
+    ],
+    features: [
+      "Copy-and-paste ISO booting",
+      "Multi-boot menu for many images at once",
+      "Supports ISO, WIM, IMG, VHD(x) and EFI",
+      "Secure Boot and persistence support",
+      "Cross-platform installer",
+      "Encrypted and legacy boot modes",
+    ],
+    color: "text-zen-orange",
+    bgColor: "bg-zen-orange/10",
+    borderColor: "border-zen-orange/30",
+    ringColor: "ring-zen-orange/30",
+    url: "https://www.ventoy.net/en/index.html",
+    icon: "/crom-logos/linux/ventoy.png",
+  },
+  {
+    slug: "balenaetcher",
+    name: "balenaEtcher",
+    type: "tools",
+    tagline: "Flash OS images to USB & SD cards easily",
+    description:
+      "A free, cross-platform utility that flashes operating system images to SD cards and USB drives quickly, safely and with simple validation.",
+    longDescription:
+      "balenaEtcher is a free and open-source cross-platform utility for flashing operating system images to SD cards and USB flash drives. It features a clean and user-friendly interface that lets you select an image, choose a drive, and flash it with a single click. Etcher validates the image after flashing to ensure everything was written correctly, protecting you from corrupt installs. Available on Windows, macOS and Linux, Etcher is the go-to tool for preparing Raspberry Pi cards, live USB sticks and many other bootable media.",
+    benefits: [
+      "Simple, three-step flashing workflow",
+      "Cross-platform (Windows, macOS, Linux)",
+      "Automatic post-flash integrity validation",
+      "Safe and reliable image writing",
+      "Free and open source",
+    ],
+    features: [
+      "Simple select-image, select-drive, flash flow",
+      "Post-flash validation to prevent corruption",
+      "Supports ISO, IMG and compressed images",
+      "Discourages flashing to system drives",
+      "Cross-platform compatibility",
+      "Lightweight and easy to use",
+    ],
+    color: "text-zen-gray",
+    bgColor: "bg-zen-gray/10",
+    borderColor: "border-zen-gray/30",
+    ringColor: "ring-zen-gray/30",
+    url: "https://etcher.balena.io/",
+    icon: "/crom-logos/linux/balenaetcher.png",
   },
 ]
 

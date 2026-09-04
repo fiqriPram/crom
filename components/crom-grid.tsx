@@ -24,6 +24,7 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
       all: roms.length,
       rom: roms.filter((r) => r.type === "rom").length,
       os: roms.filter((r) => r.type === "os").length,
+      tools: roms.filter((r) => r.type === "tools").length,
     }),
     []
   )
@@ -32,6 +33,7 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
     { key: "all", label: `All (${counts.all})` },
     { key: "rom", label: `ROM (${counts.rom})` },
     { key: "os", label: `OS (${counts.os})` },
+    { key: "tools", label: `Tools (${counts.tools})` },
   ]
 
   return (
