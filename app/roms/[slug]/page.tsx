@@ -22,7 +22,7 @@ export default async function RomPage({ params }: { params: Promise<{ slug: stri
     <div className="flex flex-col flex-1">
       <section className="flex flex-col items-center gap-6 px-6 pt-24 pb-16 text-center sm:pt-32">
         <div
-          className={`flex items-center justify-center rounded-2xl border p-3 transition-transform duration-300 hover:scale-105 bg-white/90 dark:bg-[#2a2a2a] ${rom.borderColor}`}
+          className={`flex items-center justify-center rounded-2xl border p-3 transition-transform duration-300 hover:scale-105 bg-[#2a2a2a] dark:bg-[#2a2a2a] ${rom.borderColor}`}
         >
           <img
             src={rom.icon}

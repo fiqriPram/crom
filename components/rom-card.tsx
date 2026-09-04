@@ -26,7 +26,7 @@ export function RomCard({ rom, index }: RomCardProps) {
         />
         <CardHeader className="items-center gap-3 pt-8 text-center">
           <div
-            className={`relative flex items-center justify-center rounded-2xl border p-2 transition-all duration-300 group-hover:scale-110 group-hover:shadow-md bg-white/90 dark:bg-[#2a2a2a] ${rom.borderColor}`}
+            className={`relative flex items-center justify-center rounded-2xl border p-2 transition-all duration-300 group-hover:scale-110 group-hover:shadow-md bg-[#2a2a2a] dark:bg-[#2a2a2a] ${rom.borderColor}`}
           >
             <img
               src={rom.icon}
