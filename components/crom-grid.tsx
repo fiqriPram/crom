@@ -57,7 +57,7 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
                 : "text-muted-foreground hover:text-foreground"
             }`}
           >
-            {`Open (${counts.all})`}
+            Open
           </button>
           {showFilters &&
             filters.map((f) => (
