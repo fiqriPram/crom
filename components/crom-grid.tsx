@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { roms } from "@/lib/croms";
 import { CromCard } from "@/components/crom-card";
 import type { Filter } from "@/app/page";
@@ -11,6 +11,7 @@ interface CromGridProps {
 }
 
 export function CromGrid({ filter, onFilterChange }: CromGridProps) {
+  const [showFilters, setShowFilters] = useState(false);
   const items = useMemo(() => {
     let list = roms;
     if (filter !== "all") {
@@ -49,19 +50,35 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
 
       <div className="mb-8 flex items-center justify-center">
         <div className="flex items-center gap-1 rounded-xl border border-border bg-card p-1">
-          {filters.map((f) => (
-            <button
-              key={f.key}
-              onClick={() => onFilterChange(f.key)}
-              className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
-                filter === f.key
-                  ? "bg-coral text-white"
-                  : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              {f.label}
-            </button>
-          ))}
+          <button
+            onClick={() => {
+              onFilterChange("all");
+              setShowFilters(!showFilters);
+            }}
+            className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
+              filter === "all"
+                ? "bg-coral text-white"
+                : "text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            {`Open (${counts.all})`}
+          </button>
+          {showFilters &&
+            filters
+              .filter((f) => f.key !== "all")
+              .map((f) => (
+                <button
+                  key={f.key}
+                  onClick={() => onFilterChange(f.key)}
+                  className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
+                    filter === f.key
+                      ? "bg-coral text-white"
+                      : "text-muted-foreground hover:text-foreground"
+                  }`}
+                >
+                  {f.label}
+                </button>
+              ))}
         </div>
       </div>
 
