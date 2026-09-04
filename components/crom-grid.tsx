@@ -1,23 +1,23 @@
-"use client"
+"use client";
 
-import { useMemo } from "react"
-import { roms } from "@/lib/croms"
-import { CromCard } from "@/components/crom-card"
-import type { Filter } from "@/app/page"
+import { useMemo } from "react";
+import { roms } from "@/lib/croms";
+import { CromCard } from "@/components/crom-card";
+import type { Filter } from "@/app/page";
 
 interface CromGridProps {
-  filter: Filter
-  onFilterChange: (filter: Filter) => void
+  filter: Filter;
+  onFilterChange: (filter: Filter) => void;
 }
 
 export function CromGrid({ filter, onFilterChange }: CromGridProps) {
   const items = useMemo(() => {
-    let list = roms
+    let list = roms;
     if (filter !== "all") {
-      list = list.filter((rom) => rom.type === filter)
+      list = list.filter((rom) => rom.type === filter);
     }
-    return [...list]
-  }, [filter])
+    return [...list];
+  }, [filter]);
 
   const counts = useMemo(
     () => ({
@@ -26,15 +26,15 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
       os: roms.filter((r) => r.type === "os").length,
       tools: roms.filter((r) => r.type === "tools").length,
     }),
-    []
-  )
+    [],
+  );
 
   const filters: { key: Filter; label: string }[] = [
     { key: "all", label: `All (${counts.all})` },
     { key: "rom", label: `ROM (${counts.rom})` },
     { key: "os", label: `OS (${counts.os})` },
     { key: "tools", label: `Tools (${counts.tools})` },
-  ]
+  ];
 
   return (
     <section className="mx-auto w-full max-w-6xl px-6 pb-24">
@@ -77,5 +77,5 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
         </div>
       )}
     </section>
-  )
+  );
 }
