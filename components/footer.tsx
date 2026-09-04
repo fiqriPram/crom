@@ -1,5 +1,3 @@
-import { roms } from "@/lib/croms"
-
 export function Footer() {
   return (
     <footer className="border-t border-border/50 bg-background/50">
@@ -9,7 +7,7 @@ export function Footer() {
             <span className="text-coral">crom</span>
           </p>
           <p className="text-xs text-muted-foreground">
-            {roms.length} operating systems cataloged
+            Crom Directory
           </p>
         </div>
         <p className="text-xs text-muted-foreground">
