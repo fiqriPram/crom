@@ -24,18 +24,13 @@ export function RomCard({ rom, index }: RomCardProps) {
         <div
           className={`absolute inset-x-0 top-0 h-1 opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${rom.bgColor}`}
         />
-        <CardHeader className="items-center gap-3 pt-8 text-center">
-          <div
-            className={`relative flex items-center justify-center rounded-2xl border p-2 transition-all duration-300 group-hover:scale-110 group-hover:shadow-md bg-[#2a2a2a] dark:bg-[#2a2a2a] ${rom.borderColor}`}
-          >
+        <CardHeader className="justify-items-center items-center gap-3 pt-8 text-center">
+          <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-white/[0.06] bg-[#1d1d1d] transition-transform duration-300 group-hover:scale-105">
             <img
               src={rom.icon}
               alt={`${rom.name} logo`}
-              className="size-14 rounded-lg object-contain"
+              className="block h-9 w-9 object-contain"
               loading="lazy"
-            />
-            <span
-              className={`absolute inset-0 rounded-2xl ring-1 ring-inset ${rom.ringColor} opacity-0 transition-opacity duration-300 group-hover:opacity-100`}
             />
           </div>
           <CardTitle className={`text-xl leading-tight ${rom.color}`}>

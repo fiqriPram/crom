@@ -21,13 +21,11 @@ export default async function RomPage({ params }: { params: Promise<{ slug: stri
   return (
     <div className="flex flex-col flex-1">
       <section className="flex flex-col items-center gap-6 px-6 pt-24 pb-16 text-center sm:pt-32">
-        <div
-          className={`flex items-center justify-center rounded-2xl border p-3 transition-transform duration-300 hover:scale-105 bg-[#2a2a2a] dark:bg-[#2a2a2a] ${rom.borderColor}`}
-        >
+        <div className="flex h-24 w-24 items-center justify-center rounded-2xl border border-white/[0.06] bg-[#1d1d1d] transition-transform duration-300 hover:scale-105">
           <img
             src={rom.icon}
             alt={`${rom.name} logo`}
-            className="size-20 rounded-xl object-contain"
+            className="block h-14 w-14 object-contain"
           />
         </div>
         <h1 className={`text-4xl font-semibold tracking-tight sm:text-5xl ${rom.color}`}>
