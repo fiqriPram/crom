@@ -1,6 +1,7 @@
 export type Rom = {
   slug: string
   name: string
+  type: "rom" | "os"
   tagline: string
   description: string
   longDescription: string
@@ -18,6 +19,7 @@ export const roms: Rom[] = [
   {
     slug: "crdroid",
     name: "crDroid",
+    type: "rom",
     tagline: "Performance & reliability over stock",
     description:
       "crDroid is a custom ROM based on LineageOS that aims to improve performance, reliability and customizability without compromising security.",
@@ -48,6 +50,7 @@ export const roms: Rom[] = [
   {
     slug: "lineageos",
     name: "LineageOS",
+    type: "rom",
     tagline: "Free & open-source for all devices",
     description:
       "A free and open-source operating system for various devices based on the Android mobile platform, extending functionality and lifespan.",
@@ -78,6 +81,7 @@ export const roms: Rom[] = [
   {
     slug: "evolution-x",
     name: "Evolution X",
+    type: "rom",
     tagline: "Pixel UI with deep customization",
     description:
       "Replicates the Google Pixel experience with added customization, based on LineageOS and built to bring Android 16 to your device.",
@@ -108,6 +112,7 @@ export const roms: Rom[] = [
   {
     slug: "pixel-experience",
     name: "Pixel Experience",
+    type: "rom",
     tagline: "Pure Google Pixel feel on any device",
     description:
       "A ROM based on AOSP that aims to provide the exact Google Pixel experience, with all Pixel features and minimal modifications.",
@@ -138,6 +143,7 @@ export const roms: Rom[] = [
   {
     slug: "pixelos",
     name: "PixelOS",
+    type: "rom",
     tagline: "AOSP with Pixel goodies & performance",
     description:
       "An AOSP-based ROM with Google apps included and all Pixel goodies, providing an experience similar to Google Pixel phones.",
@@ -168,6 +174,7 @@ export const roms: Rom[] = [
   {
     slug: "nusantara",
     name: "Nusantara ROM",
+    type: "rom",
     tagline: "Android OS dari Nusantara untuk siapa saja",
     description:
       "A clean, bloatware-free Android ROM developed with enthusiasm from Indonesia, focusing on privacy and customization.",
@@ -198,6 +205,7 @@ export const roms: Rom[] = [
   {
     slug: "project-elixir",
     name: "Project Elixir",
+    type: "rom",
     tagline: "Redefine simplicity with minimalistic design",
     description:
       "A clean and minimal AOSP-based custom ROM focusing on stock Android with thoughtful, balanced enhancements.",
@@ -228,6 +236,7 @@ export const roms: Rom[] = [
   {
     slug: "derpfest",
     name: "DerpFest",
+    type: "rom",
     tagline: "Feature-rich AOSP with community-driven features",
     description:
       "An AOSP-based custom ROM twisted with the latest features from all over the Android development community.",
@@ -258,6 +267,7 @@ export const roms: Rom[] = [
   {
     slug: "blissroms",
     name: "BlissRoms",
+    type: "rom",
     tagline: "Open-source OS focused on design, usability & security",
     description:
       "An open-source Android-based OS delivering a harmonious blend of customization, security, and performance across a wide range of devices.",
@@ -288,6 +298,7 @@ export const roms: Rom[] = [
   {
     slug: "voltageos",
     name: "VoltageOS",
+    type: "rom",
     tagline: "Pure AOSP — simple, secure, performant",
     description:
       "A simplistic, no-frills pure AOSP experience with the right dab of customizations, security patches, and privacy features.",
@@ -318,6 +329,7 @@ export const roms: Rom[] = [
   {
     slug: "grapheneos",
     name: "GrapheneOS",
+    type: "rom",
     tagline: "Security-hardened & privacy-focused mobile OS",
     description:
       "A privacy and security-focused mobile OS with applied security hardening, exploit mitigations, and Sandboxed Google Play compatibility.",
@@ -348,6 +360,7 @@ export const roms: Rom[] = [
   {
     slug: "superioros",
     name: "SuperiorOS",
+    type: "rom",
     tagline: "Elevate your Android experience with AOSP",
     description:
       "An AOSP-based custom ROM offering lightning-fast performance, extensive customization, and rock-solid stability.",
