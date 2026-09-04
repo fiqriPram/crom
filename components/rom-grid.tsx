@@ -41,10 +41,10 @@ export function RomGrid() {
     <section className="mx-auto w-full max-w-6xl px-6 pb-24">
       <div className="mb-8 flex flex-col items-center gap-2 text-center">
         <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60">
-          Browse by ROM
+          Browse by category
         </p>
         <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-          Choose your <span className="text-coral">ROM</span>
+          Choose your <span className="text-coral">crom</span>
         </h2>
       </div>
 

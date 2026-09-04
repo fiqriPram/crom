@@ -9,11 +9,11 @@ export function Footer() {
             <span className="text-coral">crom</span>
           </p>
           <p className="text-xs text-muted-foreground">
-            {roms.length} custom Android ROMs cataloged
+            {roms.length} operating systems cataloged
           </p>
         </div>
         <p className="text-xs text-muted-foreground">
-          Not affiliated with any ROM project. All trademarks belong to their respective owners.
+          Not affiliated with any project. All trademarks belong to their respective owners.
         </p>
       </div>
     </footer>

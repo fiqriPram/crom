@@ -44,7 +44,7 @@ export function RomCard({ rom, index }: RomCardProps) {
           <span
             className={`mt-4 inline-flex items-center gap-1 text-xs font-medium ${rom.color} opacity-0 transition-all duration-300 group-hover:opacity-100`}
           >
-            View ROM
+            View ROMs
             <svg viewBox="0 0 16 16" fill="currentColor" className="size-3 transition-transform duration-300 group-hover:translate-x-0.5">
               <path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z" />
             </svg>

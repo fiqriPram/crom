@@ -19,9 +19,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ROM Directory — Custom Android ROMs",
+  title: "crom Directory — Custom Operating Systems",
   description:
-    "Discover the best custom Android ROMs to improve performance, privacy, and customization on your device.",
+    "Discover the best custom operating systems to improve performance, privacy, and customization on your device.",
 };
 
 export default function RootLayout({

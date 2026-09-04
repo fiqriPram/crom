@@ -25,7 +25,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2 text-sm font-semibold tracking-tight">
           <span className="text-coral">crom</span>
           <span className="text-muted-foreground">/</span>
-          <span className="text-muted-foreground">ROM Directory</span>
+          <span className="text-muted-foreground">Directory</span>
         </Link>
 
         <div className="flex items-center gap-3">
@@ -34,7 +34,7 @@ export function Header() {
               href="/"
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
-              All ROMs
+              All entries
             </Link>
           )}
           <button
