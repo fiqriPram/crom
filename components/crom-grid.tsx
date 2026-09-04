@@ -35,26 +35,17 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
 
   return (
     <section className="mx-auto w-full max-w-6xl px-6 pb-24">
-      <div className="mb-8 flex flex-col items-center gap-2 text-center">
-        <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground/60">
-          Browse by category
-        </p>
-        <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-          Choose your <span className="text-coral">crom</span>
-        </h2>
-      </div>
-
-      <div className="mb-8 flex items-center justify-center">
-        <div className="flex items-center gap-1 rounded-xl border border-border bg-card p-1">
+      <div className="mb-8 flex flex-col items-center gap-4 text-center">
+        <div className="flex items-center gap-2 rounded-2xl border border-border/70 bg-card/70 p-1.5 shadow-sm backdrop-blur-sm">
           <button
             onClick={() => {
               setShowFilters(!showFilters);
               if (filter !== "all") onFilterChange("all");
             }}
-            className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
+            className={`rounded-xl px-4 py-2 text-sm font-medium transition-all duration-200 ${
               filter === "all"
-                ? "bg-coral text-white"
-                : "text-muted-foreground hover:text-foreground"
+                ? "bg-coral text-white shadow-sm"
+                : "text-muted-foreground hover:text-foreground hover:bg-accent/60"
             }`}
           >
             Open
@@ -64,10 +55,10 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
               <button
                 key={f.key}
                 onClick={() => onFilterChange(f.key)}
-                className={`rounded-lg px-3 py-1.5 text-sm font-medium transition-colors ${
+                className={`rounded-xl px-4 py-2 text-sm font-medium transition-all duration-200 ${
                   filter === f.key
-                    ? "bg-coral text-white"
-                    : "text-muted-foreground hover:text-foreground"
+                    ? "bg-coral text-white shadow-sm"
+                    : "text-muted-foreground hover:text-foreground hover:bg-accent/60"
                 }`}
               >
                 {f.label}
