@@ -21,127 +21,42 @@ export default async function RomPage({ params }: { params: Promise<{ slug: stri
   return (
     <div className="flex flex-col flex-1">
       <section className="flex flex-col items-center gap-6 px-6 pt-24 pb-16 text-center sm:pt-32">
-        <div className={`flex items-center justify-center rounded-2xl ${rom.bgColor} p-4`}>
-          <svg viewBox="0 0 64 64" fill="none" className="size-20">
-            <circle cx="32" cy="32" r="28" stroke="currentColor" className={`${rom.color}/30`} strokeWidth="1.5" />
-            {rom.slug === "crdroid" && (
-              <>
-                <path d="M22 30c0-5.523 4.477-10 10-10s10 4.477 10 10v1c0 5.523-4.477 10-10 10s-10-4.477-10-10v-1Z" fill="currentColor" className={`${rom.color}/20`} />
-                <circle cx="32" cy="31" r="6" fill="currentColor" className={`${rom.color}/50`} />
-                <circle cx="32" cy="31" r="3" fill="currentColor" />
-              </>
-            )}
-            {rom.slug === "lineageos" && (
-              <>
-                <path d="M46 30c0 7.732-6.268 14-14 14s-14-6.268-14-14 6.268-14 14-14" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="2.5" strokeLinecap="round" fill="none" />
-                <path d="M46 30h-7l3.5-5 3.5 5Z" fill="currentColor" />
-                <circle cx="26" cy="30" r="2.5" fill="currentColor" className={`${rom.color}/60`} />
-                <circle cx="38" cy="30" r="2.5" fill="currentColor" className={`${rom.color}/60`} />
-              </>
-            )}
-            {rom.slug === "evolution-x" && (
-              <>
-                <path d="M22 22h20v14c0 5.523-4.477 10-10 10s-10-4.477-10-10V22Z" fill="currentColor" className={`${rom.color}/20`} />
-                <path d="M22 28h20" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="2" strokeLinecap="round" />
-                <circle cx="32" cy="40" r="4" fill="currentColor" className={`${rom.color}/40`} />
-                <path d="M28 44c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-              </>
-            )}
-            {rom.slug === "pixel-experience" && (
-              <>
-                <rect x="20" y="18" width="24" height="28" rx="5" fill="currentColor" className={`${rom.color}/20`} />
-                <circle cx="32" cy="30" r="5" fill="currentColor" className={`${rom.color}/40`} />
-                <path d="M26 42c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" className={`${rom.color}/60`} strokeWidth="1.5" strokeLinecap="round" />
-                <circle cx="38" cy="24" r="2" fill="currentColor" className={`${rom.color}/30`} />
-              </>
-            )}
-            {rom.slug === "pixelos" && (
-              <>
-                <path d="M20 28h24l-4-8H24l-4 8Z" fill="currentColor" className={`${rom.color}/20`} />
-                <path d="M20 28v10c0 3.314 2.686 6 6 6h12c3.314 0 6-2.686 6-6V28" fill="currentColor" className={`${rom.color}/20`} />
-                <path d="M20 28h24" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="1.5" />
-                <circle cx="32" cy="34" r="4" fill="currentColor" className={`${rom.color}/40`} />
-                <path d="M28 40c0-2.21 1.79-4 4-4s4 1.79 4 4" stroke="currentColor" className={`${rom.color}/60`} strokeWidth="1.5" strokeLinecap="round" />
-              </>
-            )}
-            {rom.slug === "nusantara" && (
-              <>
-                <path d="M20 22h24v20c0 5.523-4.477 10-10 10H30c-5.523 0-10-4.477-10-10V22Z" fill="currentColor" className={`${rom.color}/20`} />
-                <path d="M24 28h16M24 34h16M24 40h8" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="1.5" strokeLinecap="round" />
-                <circle cx="44" cy="26" r="3" fill="currentColor" className={`${rom.color}/40`} />
-              </>
-            )}
-            {rom.slug === "project-elixir" && (
-              <>
-                <path d="M24 18c-4.418 0-8 3.582-8 8v12c0 4.418 3.582 8 8 8h16c4.418 0 8-3.582 8-8V26c0-4.418-3.582-8-8-8H24Z" fill="currentColor" className={`${rom.color}/20`} />
-                <path d="M28 32l3 3 6-6" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <circle cx="44" cy="24" r="3" fill="currentColor" className={`${rom.color}/40`} />
-                <path d="M22 40c0-1.5 1.5-3 3-3h14c1.5 0 3 1.5 3 3" stroke="currentColor" className={`${rom.color}/30`} strokeWidth="1.5" />
-              </>
-            )}
-            {rom.slug === "derpfest" && (
-              <>
-                <path d="M20 24c0-2.21 1.79-4 4-4h16c2.21 0 4 1.79 4 4v16c0 2.21-1.79 4-4 4H24c-2.21 0-4-1.79-4-4V24Z" fill="currentColor" className={`${rom.color}/20`} />
-                <path d="M28 28l4 4 4-4M28 36l4 4 4-4" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <circle cx="44" cy="22" r="3" fill="currentColor" className={`${rom.color}/40`} />
-              </>
-            )}
-            {rom.slug === "blissroms" && (
-              <>
-                <path d="M20 24l12-8 12 8v16c0 2.21-1.79 4-4 4H24c-2.21 0-4-1.79-4-4V24Z" fill="currentColor" className={`${rom.color}/20`} />
-                <path d="M20 24l12 4 12-4" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="1.5" />
-                <circle cx="32" cy="34" r="4" fill="currentColor" className={`${rom.color}/40`} />
-                <circle cx="44" cy="22" r="2.5" fill="currentColor" className={`${rom.color}/30`} />
-              </>
-            )}
-            {rom.slug === "voltageos" && (
-              <>
-                <path d="M24 20h16c2.21 0 4 1.79 4 4v8l-6 6H24c-2.21 0-4-1.79-4-4V24c0-2.21 1.79-4 4-4Z" fill="currentColor" className={`${rom.color}/20`} />
-                <path d="M24 28h16M24 34h10" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="1.5" strokeLinecap="round" />
-                <circle cx="44" cy="22" r="2.5" fill="currentColor" className={`${rom.color}/30`} />
-                <path d="M38 38l6-6v4c0 2.21-1.79 4-4 4h-2Z" fill="currentColor" className={`${rom.color}/20`} />
-              </>
-            )}
-            {rom.slug === "superioros" && (
-              <>
-                <path d="M22 26c0-2.21 1.79-4 4-4h12c2.21 0 4 1.79 4 4v12c0 2.21-1.79 4-4 4H26c-2.21 0-4-1.79-4-4V26Z" fill="currentColor" className={`${rom.color}/20`} />
-                <path d="M28 28l4 4-4 4M32 36h6" stroke="currentColor" className={`${rom.color}/50`} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <circle cx="44" cy="24" r="2.5" fill="currentColor" className={`${rom.color}/30`} />
-              </>
-            )}
-            {rom.slug === "projectblaze" && (
-              <>
-                <path d="M32 16l10 12c4 4.5 4 11 0 15.5-2 2.5-5 4-8 4s-6-1.5-8-4c-4-4.5-4-11 0-15.5l8-12Z" fill="currentColor" className={`${rom.color}/20`} />
-                <path d="M32 16l6 8c3 3.5 3 8 0 11-1.5 2-3.5 3-6 3s-4.5-1-6-3c-3-3-3-7.5 0-11l6-8Z" fill="currentColor" className={`${rom.color}/30`} />
-                <path d="M30 28l2 4 2-4" stroke="currentColor" className={`${rom.color}/60`} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <circle cx="32" cy="38" r="2.5" fill="currentColor" />
-              </>
-            )}
-          </svg>
+        <div
+          className={`flex items-center justify-center rounded-2xl ${rom.bgColor} p-5 transition-transform duration-300 hover:scale-105`}
+        >
+          <div className="size-20 [&_svg]:size-20">{rom.thumbnail}</div>
         </div>
         <h1 className={`text-4xl font-semibold tracking-tight sm:text-5xl ${rom.color}`}>
           {rom.name}
         </h1>
-        <p className="max-w-lg text-lg text-muted-foreground">
+        <p className="max-w-md text-sm text-muted-foreground italic">
+          {rom.tagline}
+        </p>
+        <p className="max-w-lg text-base text-muted-foreground leading-relaxed">
           {rom.description}
         </p>
-        <div className="flex gap-3">
+        <div className="flex gap-3 pt-2">
           <a href={rom.url} target="_blank" rel="noopener noreferrer">
-            <Button size="lg">Visit {rom.name}</Button>
+            <Button size="lg" className="gap-2">
+              Visit {rom.name}
+              <svg viewBox="0 0 16 16" fill="currentColor" className="size-3.5">
+                <path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z" />
+              </svg>
+            </Button>
           </a>
           <Link href="/">
             <Button variant="outline" size="lg">
-              Back to Directory
+              Back
             </Button>
           </Link>
         </div>
       </section>
 
-      <section className="flex flex-col items-center gap-12 px-6 pb-24">
-        <div className="mx-auto grid w-full max-w-4xl grid-cols-1 gap-6 lg:grid-cols-2">
+      <section className="flex flex-col items-center gap-8 px-6 pb-24">
+        <div className="mx-auto grid w-full max-w-4xl grid-cols-1 gap-5 lg:grid-cols-2">
           <Card className="border-2">
             <CardHeader>
-              <CardTitle className="text-xl">About</CardTitle>
+              <CardTitle className={`text-lg ${rom.color}`}>About</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm leading-relaxed text-muted-foreground">
@@ -152,12 +67,12 @@ export default async function RomPage({ params }: { params: Promise<{ slug: stri
 
           <Card className="border-2">
             <CardHeader>
-              <CardTitle className="text-xl">Benefits</CardTitle>
+              <CardTitle className={`text-lg ${rom.color}`}>Benefits</CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2">
+              <ul className="space-y-2.5">
                 {rom.benefits.map((b) => (
-                  <li key={b} className="flex items-start gap-2 text-sm">
+                  <li key={b} className="flex items-start gap-2.5 text-sm">
                     <svg
                       viewBox="0 0 16 16"
                       fill="currentColor"
@@ -175,12 +90,12 @@ export default async function RomPage({ params }: { params: Promise<{ slug: stri
 
         <Card className="w-full max-w-4xl border-2">
           <CardHeader>
-            <CardTitle className="text-xl">Features</CardTitle>
+            <CardTitle className={`text-lg ${rom.color}`}>Features</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 gap-x-8 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
               {rom.features.map((f) => (
-                <div key={f} className="flex items-center gap-2 text-sm">
+                <div key={f} className="flex items-center gap-2.5 text-sm">
                   <svg
                     viewBox="0 0 16 16"
                     fill="currentColor"
