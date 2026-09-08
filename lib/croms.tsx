@@ -884,6 +884,37 @@ export const roms: Rom[] = [
     url: "https://etcher.balena.io/",
     icon: "/crom-logos/tools/balenaetcher.png",
   },
+  {
+    slug: "rufus",
+    name: "Rufus",
+    type: "tools",
+    tagline: "A fast, reliable USB boot drive creator",
+    description:
+      "A lightweight, open-source utility for formatting and creating bootable USB flash drives quickly and reliably.",
+    longDescription:
+      "Rufus is a small, portable application that helps format and create bootable USB drives from ISO images. It supports a wide range of file systems and boot configurations, making it one of the most popular tools for creating Windows installation media and booting Linux live systems. Rufus is known for its speed, reliability and minimal footprint.",
+    benefits: [
+      "Fast USB formatting and ISO writing",
+      "Supports BIOS and UEFI boot modes",
+      "Lightweight and portable — no install needed",
+      "Works with Windows, Linux and more",
+      "Free and open source",
+    ],
+    features: [
+      "Bootable USB creation from ISO",
+      "BIOS and UEFI compatibility",
+      "Multiple file system options",
+      "Fast write speeds",
+      "Portable executable",
+      "Persistent storage support",
+    ],
+    color: "text-zen-orange",
+    bgColor: "bg-zen-orange/10",
+    borderColor: "border-zen-orange/30",
+    ringColor: "ring-zen-orange/30",
+    url: "https://rufus.ie/en/",
+    icon: "/crom-logos/tools/rufus.png",
+  },
 ]
 
 export function getRom(slug: string): Rom | undefined {
