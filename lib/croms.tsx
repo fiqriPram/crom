@@ -730,37 +730,6 @@ export const roms: Rom[] = [
     icon: "/crom-logos/linux/parrot.png",
   },
   {
-    slug: "popos",
-    name: "Pop!_OS",
-    type: "os",
-    tagline: "A polished Ubuntu-based OS for creators & gamers",
-    description:
-      "A free, open-source Linux distribution from System76, based on Ubuntu with a sleek COSMIC desktop optimized for developers, makers and gamers.",
-    longDescription:
-      "Pop!_OS is a free and open-source Linux distribution by System76, built on the rock-solid Ubuntu foundation. It pairs a polished, productivity-focused COSMIC desktop with automatic window tiling, streamlined workspaces and out-of-the-box support for modern GPUs — making it a favorite among developers, creators and gamers. With intelligent hardware detection, easy graphics switching and a big, well-curated app store, Pop!_OS is designed to get out of your way so you can focus. System76 is already building the next COSMIC desktop from scratch in Rust.",
-    benefits: [
-      "Ubuntu-based with outstanding stability",
-      "Automatic window tiling and workspaces",
-      "Easy hybrid graphics switching out of the box",
-      "Great out-of-the-box experience for gaming",
-      "Free and open-source from System76",
-    ],
-    features: [
-      "The COSMIC desktop environment",
-      "Based on Ubuntu with access to its ecosystem",
-      "Automatic tiling and keyboard-driven workflow",
-      "Hybrid graphics mode switching",
-      "Curated Pop!_Shop for app installation",
-      "Built-in disk encryption option",
-    ],
-    color: "text-zen-orange",
-    bgColor: "bg-zen-orange/10",
-    borderColor: "border-zen-orange/30",
-    ringColor: "ring-zen-orange/30",
-    url: "https://system76.com/pop",
-    icon: "/crom-logos/linux/popos.png",
-  },
-  {
     slug: "manjaro",
     name: "Manjaro",
     type: "os",
