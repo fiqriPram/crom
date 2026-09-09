@@ -21,7 +21,7 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
     () => ({
       all: roms.length,
       rom: roms.filter((r) => r.type === "rom").length,
-      os: roms.filter((r) => r.type === "os").length,
+      linux: roms.filter((r) => r.type === "linux").length,
       tools: roms.filter((r) => r.type === "tools").length,
     }),
     [],
@@ -29,7 +29,7 @@ export function CromGrid({ filter, onFilterChange }: CromGridProps) {
 
   const filters: { key: Filter; label: string }[] = [
     { key: "rom", label: `ROM (${counts.rom})` },
-    { key: "os", label: `OS (${counts.os})` },
+    { key: "linux", label: `Linux (${counts.linux})` },
     { key: "tools", label: `Tools (${counts.tools})` },
   ];
 

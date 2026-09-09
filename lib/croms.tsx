@@ -1,7 +1,7 @@
 export type Rom = {
   slug: string
   name: string
-  type: "rom" | "os" | "tools"
+  type: "rom" | "linux" | "tools"
   tagline: string
   description: string
   longDescription: string
@@ -391,7 +391,7 @@ export const roms: Rom[] = [
   {
     slug: "linuxmint",
     name: "Linux Mint",
-    type: "os",
+    type: "linux",
     tagline: "Elegant, comfortable & free desktop OS",
     description:
       "A free, open-source Linux distribution designed for ease of use, comfort, and out-of-the-box productivity for everyday computing.",
@@ -422,7 +422,7 @@ export const roms: Rom[] = [
   {
     slug: "archlinux",
     name: "Arch Linux",
-    type: "os",
+    type: "linux",
     tagline: "A simple, lightweight, rolling-release Linux distro",
     description:
       "An independently developed, x86-64 general-purpose Linux distribution that strives to provide the latest stable versions of most software through a rolling-release model.",
@@ -453,7 +453,7 @@ export const roms: Rom[] = [
   {
     slug: "cachyos",
     name: "CachyOS",
-    type: "os",
+    type: "linux",
     tagline: "A performance-optimized, Arch-based Linux distro",
     description:
       "An Arch Linux-based distribution focused on optimization, performance and usability, shipping with the latest available kernels and a tuned desktop out of the box.",
@@ -484,7 +484,7 @@ export const roms: Rom[] = [
   {
     slug: "ubuntu",
     name: "Ubuntu",
-    type: "os",
+    type: "linux",
     tagline: "The most popular, user-friendly Linux distro",
     description:
       "A free, open-source Linux distribution based on Debian, known for its ease of use, regular LTS releases and a huge ecosystem of apps and support.",
@@ -515,7 +515,7 @@ export const roms: Rom[] = [
   {
     slug: "omarchy",
     name: "Omarchy",
-    type: "os",
+    type: "linux",
     tagline: "A comfortable, Arch-based Linux for everyone",
     description:
       "An Arch Linux-based distribution built around the GNUstep ecosystem, focusing on comfort, simplicity and an approachable experience for new users.",
@@ -546,7 +546,7 @@ export const roms: Rom[] = [
   {
     slug: "lubuntu",
     name: "Lubuntu",
-    type: "os",
+    type: "linux",
     tagline: "An Ubuntu-based distro with a light, fast LXQt desktop",
     description:
       "A fast and lightweight Ubuntu-based Linux distribution using the LXQt desktop environment, perfect for older or resource-limited computers.",
@@ -577,7 +577,7 @@ export const roms: Rom[] = [
   {
     slug: "kubuntu",
     name: "Kubuntu",
-    type: "os",
+    type: "linux",
     tagline: "An Ubuntu-based distro with the full KDE Plasma experience",
     description:
       "An official Ubuntu flavor combining the stability of Ubuntu with the powerful, feature-rich KDE Plasma desktop and the KDE ecosystem of applications.",
@@ -608,7 +608,7 @@ export const roms: Rom[] = [
   {
     slug: "gentoo",
     name: "Gentoo",
-    type: "os",
+    type: "linux",
     tagline: "A highly customizable, source-based Linux distro",
     description:
       "A flexible, source-based Linux distribution known for efficiency, customizability and the Portage package management system.",
@@ -639,7 +639,7 @@ export const roms: Rom[] = [
   {
     slug: "voidlinux",
     name: "Void Linux",
-    type: "os",
+    type: "linux",
     tagline: "An independent, rolling-release Linux distro",
     description:
       "An independent, lightweight, rolling-release Linux distribution using the runit init system and the xbps package manager.",
@@ -670,7 +670,7 @@ export const roms: Rom[] = [
   {
     slug: "kali",
     name: "Kali Linux",
-    type: "os",
+    type: "linux",
     tagline: "The go-to Linux distro for security and pentesting",
     description:
       "A Debian-based Linux distribution packed with hundreds of tools for digital forensics and penetration testing, maintained by Offensive Security.",
@@ -701,7 +701,7 @@ export const roms: Rom[] = [
   {
     slug: "parrot",
     name: "Parrot OS",
-    type: "os",
+    type: "linux",
     tagline: "A security-focused Debian-based Linux distro",
     description:
       "A Debian-based Linux distribution designed for security, privacy and development, combining a full cybersecurity toolbox with an approachable daily desktop.",
@@ -732,7 +732,7 @@ export const roms: Rom[] = [
   {
     slug: "manjaro",
     name: "Manjaro",
-    type: "os",
+    type: "linux",
     tagline: "A user-friendly, Arch-based Linux distro",
     description:
       "A free, open-source Linux distribution based on Arch Linux, designed for ease of use with automatic hardware detection and a polished desktop experience.",
@@ -763,7 +763,7 @@ export const roms: Rom[] = [
   {
     slug: "artixlinux",
     name: "Artix Linux",
-    type: "os",
+    type: "linux",
     tagline: "A fast, independent Arch-based Linux with open init systems",
     description:
       "An independent, rolling-release Linux distribution based on Arch Linux that uses open-source init systems like runit, OpenRC or s6 instead of systemd.",
@@ -794,7 +794,7 @@ export const roms: Rom[] = [
   {
     slug: "aerynos",
     name: "Aerynos",
-    type: "os",
+    type: "linux",
     tagline: "A clean, modern Linux desktop for creators",
     description:
       "A free, open-source Linux distribution focused on simplicity, performance and user experience with modern design.",

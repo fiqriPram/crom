@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Hero } from "@/components/hero"
 import { CromGrid } from "@/components/crom-grid"
 
-export type Filter = "all" | "rom" | "os" | "tools"
+export type Filter = "all" | "rom" | "linux" | "tools"
 
 export default function Home() {
   const [filter, setFilter] = useState<Filter>("all")
