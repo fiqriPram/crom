@@ -792,6 +792,37 @@ export const roms: Rom[] = [
     icon: "/crom-logos/linux/artixlinux.png",
   },
   {
+    slug: "aerynos",
+    name: "Aerynos",
+    type: "os",
+    tagline: "A clean, modern Linux desktop for creators",
+    description:
+      "A free, open-source Linux distribution focused on simplicity, performance and user experience with modern design.",
+    longDescription:
+      "Aerynos is designed for users who value a clean, modern desktop environment with strong performance and usability. It offers a streamlined experience with curated applications, modern design principles, and a focus on user productivity. Aerynos aims to provide a reliable, fast and elegant Linux desktop without unnecessary complexity.",
+    benefits: [
+      "Modern, clean user interface",
+      "Performance-optimized desktop",
+      "Curated application selection",
+      "Free and open source",
+      "Active community support",
+    ],
+    features: [
+      "Modern desktop environment",
+      "Optimized system performance",
+      "Curated default applications",
+      "Open-source and free",
+      "Active development community",
+      "User-focused design",
+    ],
+    color: "text-zen-teal",
+    bgColor: "bg-zen-teal/10",
+    borderColor: "border-zen-teal/30",
+    ringColor: "ring-zen-teal/30",
+    url: "https://aerynos.com/",
+    icon: "/crom-logos/linux/aerynos.png",
+  },
+  {
     slug: "orangefox",
     name: "OrangeFox",
     type: "tools",
