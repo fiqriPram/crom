@@ -823,6 +823,37 @@ export const roms: Rom[] = [
     icon: "/crom-logos/linux/aerynos.png",
   },
   {
+    slug: "endeavouros",
+    name: "EndeavourOS",
+    type: "linux",
+    tagline: "A terminal-centric Arch-based Linux distro",
+    description:
+      "A rolling-release Linux distribution based on Arch Linux, offering a user-friendly installation with a minimal, terminal-centric approach and full Arch compatibility.",
+    longDescription:
+      "EndeavourOS is a terminal-centric, Arch-based Linux distribution that bridges the gap between the ease of installation and the power of a pure Arch system. Unlike other Arch-based distros that add heavy custom layers, EndeavourOS stays close to vanilla Arch while providing a friendly graphical installer and a welcoming community. It ships with a minimal set of preinstalled tools and lets you choose your desktop environment during installation, making it a great choice for users who want an Arch experience without the manual setup while still retaining full access to the Arch ecosystem.",
+    benefits: [
+      "Near-vanilla Arch Linux with an easy installer",
+      "Full compatibility with Arch repos and the AUR",
+      "Minimal bloat — choose your own desktop environment",
+      "Rolling release with up-to-date software",
+      "Welcoming and helpful community",
+    ],
+    features: [
+      "Graphical installer for easy setup",
+      "Near-vanilla Arch Linux base",
+      "Multiple desktop environment choices",
+      "Full AUR and pacman access",
+      "Rolling-release updates",
+      "Terminal-centric workflow",
+    ],
+    color: "text-zen-purple",
+    bgColor: "bg-zen-purple/10",
+    borderColor: "border-zen-purple/30",
+    ringColor: "ring-zen-purple/30",
+    url: "https://endeavouros.com/",
+    icon: "/crom-logos/linux/endeavouros.png",
+  },
+  {
     slug: "orangefox",
     name: "OrangeFox",
     type: "tools",
