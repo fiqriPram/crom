@@ -854,6 +854,37 @@ export const roms: Rom[] = [
     icon: "/crom-logos/linux/endeavouros.png",
   },
   {
+    slug: "nixos",
+    name: "NixOS",
+    type: "linux",
+    tagline: "Declarative, reproducible & reliable Linux distro",
+    description:
+      "An independent Linux distribution built on the Nix package manager, focused on declarative system configuration, reproducibility and reliability.",
+    longDescription:
+      "NixOS is a Linux distribution built around the Nix package manager and its declarative configuration model. The entire system — packages, services and configuration — is defined in a single declarative language, making builds reproducible and upgrades safe with atomic rollbacks. With over 140,000 packages in Nixpkgs, NixOS ensures that installing or upgrading one package never breaks others, and that a working configuration on one machine works identically on another. It is ideal for developers, DevOps workflows and users who want fully reproducible systems.",
+    benefits: [
+      "Fully declarative system configuration with rollbacks",
+      "Reproducible builds — works the same on every machine",
+      "Atomic upgrades with no broken intermediate states",
+      "Over 140,000 packages via Nixpkgs",
+      "Isolated package installs that never conflict",
+    ],
+    features: [
+      "Declarative configuration via Nix language",
+      "Atomic upgrades & easy rollbacks",
+      "Reproducible, isolated package builds",
+      "Huge Nixpkgs collection (140k+ packages)",
+      "Dev shells & reproducible dev environments",
+      "Reliable multi-machine deployments",
+    ],
+    color: "text-zen-blue",
+    bgColor: "bg-zen-blue/10",
+    borderColor: "border-zen-blue/30",
+    ringColor: "ring-zen-blue/30",
+    url: "https://nixos.org/",
+    icon: "/crom-logos/linux/nixos.png",
+  },
+  {
     slug: "orangefox",
     name: "OrangeFox",
     type: "tools",
